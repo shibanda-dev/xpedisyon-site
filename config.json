@@ -1,14 +1,14 @@
 {
   "hero": {
+    "carte_flottante_titre": "Proposition envoyée",
     "badge": "Nou pale kreyòl · Réponse < 2h · 7j/7",
-    "titre_ligne1": "Vwayaje tankou",
-    "titre_ligne2": "yon lokal",
+    "carte_flottante_chiffre": "24 heures",
+    "carte_flottante_texte": "Itinéraire jour par jour, hébergements, prix détaillé.",
+    "note_sociale": "Familles, couples et groupes d'église déjà partis avec nous en 2025.",
     "sous_titre_mono": "Voyager comme un local — organisé comme un pro",
     "texte": "L'agence de la diaspora haïtienne de Montréal. Haïti, République Dominicaine, Floride — avec quelqu'un qui parle votre langue, connaît les gens sur place, et s'occupe de tout.",
-    "note_sociale": "Familles, couples et groupes d'église déjà partis avec nous en 2025.",
-    "carte_flottante_titre": "Proposition envoyée",
-    "carte_flottante_chiffre": "24 heures",
-    "carte_flottante_texte": "Itinéraire jour par jour, hébergements, prix détaillé."
+    "titre_ligne1": "Vwayaje tankou",
+    "titre_ligne2": "yon lokal"
   },
   "marquee": [
     {
@@ -158,8 +158,8 @@
     }
   ],
   "contact": {
-    "whatsapp": "15141234567",
-    "whatsapp_affiche": "514-XXX-XXXX",
+    "whatsapp": "15148828996",
+    "whatsapp_affiche": "514-777-2472",
     "email": "bonjour@xpedisyon.ca",
     "ville": "Montréal, Québec, Canada",
     "disponibilite": "7 jours sur 7 · Réponse < 2h"
