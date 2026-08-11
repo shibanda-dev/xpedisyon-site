@@ -1,0 +1,90 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: simple
+locale: "fr"
+
+collections:
+  - name: "contenu"
+    label: "Contenu du site XPEDISYON"
+    files:
+      - name: "config"
+        label: "Textes, piliers, destinations, témoignages, contact"
+        file: "config.json"
+        fields:
+          - label: "Section Hero (haut de page)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge (au-dessus du titre)", name: "badge", widget: "string" }
+              - { label: "Titre — ligne 1", name: "titre_ligne1", widget: "string" }
+              - { label: "Titre — ligne 2 (en dégradé)", name: "titre_ligne2", widget: "string" }
+              - { label: "Sous-titre mono", name: "sous_titre_mono", widget: "string" }
+              - { label: "Texte principal", name: "texte", widget: "text" }
+              - { label: "Note sociale (sous les avatars)", name: "note_sociale", widget: "string" }
+              - { label: "Carte flottante — titre", name: "carte_flottante_titre", widget: "string" }
+              - { label: "Carte flottante — chiffre", name: "carte_flottante_chiffre", widget: "string" }
+              - { label: "Carte flottante — texte", name: "carte_flottante_texte", widget: "string" }
+
+          - label: "Bandeau défilant (villes)"
+            name: "marquee"
+            widget: "list"
+            field: { label: "Ville", widget: "string" }
+
+          - label: "Statistiques (4 chiffres clés)"
+            name: "stats"
+            widget: "list"
+            max: 4
+            min: 4
+            fields:
+              - { label: "Chiffre", name: "chiffre", widget: "string" }
+              - { label: "Libellé", name: "libelle", widget: "string" }
+
+          - label: "Piliers de différenciation (6)"
+            name: "piliers"
+            widget: "list"
+            fields:
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Destinations (3)"
+            name: "destinations"
+            widget: "list"
+            fields:
+              - { label: "Étiquette (tag)", name: "tag", widget: "string" }
+              - { label: "Nom de la destination", name: "nom", widget: "string" }
+              - { label: "Sous-titre", name: "sous_titre", widget: "string" }
+              - { label: "Détail (affiché au survol)", name: "detail", widget: "text" }
+              - { label: "Image (optionnelle)", name: "image", widget: "image", required: false }
+
+          - label: "Étapes du processus (5)"
+            name: "etapes"
+            widget: "list"
+            fields:
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Témoignages"
+            name: "temoignages"
+            widget: "list"
+            fields:
+              - { label: "Initiales (avatar)", name: "initiales", widget: "string" }
+              - { label: "Couleur de fond de l'avatar (hex)", name: "couleur", widget: "string" }
+              - { label: "Couleur du texte de l'avatar (hex)", name: "texte_couleur", widget: "string" }
+              - { label: "Texte du témoignage", name: "texte", widget: "text" }
+              - { label: "Nom du client", name: "nom", widget: "string" }
+              - { label: "Contexte (ex: Famille 5 personnes · RD 2025)", name: "contexte", widget: "string" }
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "WhatsApp (indicatif + numéro, ex. 15141234567)", name: "whatsapp", widget: "string" }
+              - { label: "WhatsApp affiché (ex. 514-XXX-XXXX)", name: "whatsapp_affiche", widget: "string" }
+              - { label: "Courriel", name: "email", widget: "string" }
+              - { label: "Ville", name: "ville", widget: "string" }
+              - { label: "Disponibilité", name: "disponibilite", widget: "string" }
