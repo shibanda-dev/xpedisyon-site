@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XPEDISYON — Agence de voyages expérientiels caribéens</title>
+<meta name="description" content="Agence de voyages caribéens pour la diaspora haïtienne de Montréal. Service en créole et français. Partenaires locaux sur place. Consultation gratuite.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div id="progress"></div>
+  <div class="nav-inner">
+    <a href="#top" class="brand"><b>XPEDISYON</b><span>par Zanmi Delis · Montréal</span></a>
+    <div class="nav-links" id="nav-menu">
+      <a href="#differentiateurs" id="nav-pourquoi">Pourquoi nous</a>
+      <a href="#destinations" id="nav-destinations">Destinations</a>
+      <a href="groupes-mariages.html" id="nav-groupes">Groupes &amp; mariages</a>
+      <a href="#comment" id="nav-comment">Comment ça marche</a>
+      <a href="faq.html" id="nav-faq">FAQ</a>
+      <a href="journal.html" id="nav-journal">Journal</a>
+      <div class="lang-toggle">
+        <button id="lang-fr" class="active">FR</button>
+        <button id="lang-kr">KR</button>
+      </div>
+      <a href="#contact" class="nav-cta" id="nav-cta">Consultation gratuite</a>
+    </div>
+    <div class="hamburger" onclick="document.getElementById('nav-menu').classList.toggle('open')"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div data-reveal>
+      <div class="badge"><span class="dot"></span><span id="hero-badge">Nou pale kreyòl · Réponse &lt; 2h · 7j/7</span></div>
+      <h1 id="hero-titre">Vwayaje tankou<br><em>yon lokal</em></h1>
+      <p class="hero-mono" id="hero-mono">Voyager comme un local — organisé comme un pro</p>
+      <p class="hero-sub" id="hero-texte">L'agence de la diaspora haïtienne de Montréal.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">Consultation gratuite &rarr;</a>
+        <a href="sondage.html" class="btn btn-outline">Participer au sondage</a>
+      </div>
+      <div class="social-row">
+        <div class="avatars">
+          <span style="background:var(--orange);color:var(--dark)">JE</span>
+          <span style="background:var(--teal);color:var(--cream)">CP</span>
+          <span style="background:var(--gold);color:var(--dark)">EB</span>
+        </div>
+        <p><span class="stars">★★★★★</span> <span id="hero-social">Familles, couples et groupes d'église déjà partis avec nous en 2025.</span></p>
+      </div>
+    </div>
+    <div class="hero-art" data-reveal>
+      <div class="art-main" id="art-main"><span class="art-label" id="art-main-label" style="display:none">photo — plage / famille</span></div>
+      <div class="art-second" id="art-second"><span class="art-label" id="art-second-label" style="display:none">photo — rue<br>Cap-Haïtien</span></div>
+      <div class="art-card">
+        <p id="art-tag">Proposition envoyée</p>
+        <p class="num" id="art-num">24 heures</p>
+        <p id="art-text">Itinéraire jour par jour, hébergements, prix détaillé.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-wrap">
+  <div class="marquee" id="marquee"></div>
+</div>
+
+<section class="stats-section">
+  <div class="stats-grid" id="stats-grid" data-reveal></div>
+</section>
+
+
+<section class="trust-section">
+  <div class="trust-card" data-reveal>
+    <div>
+      <p class="opc-line" id="trust-opc-line">● En affiliation avec une agence détentrice d'un permis OPC</p>
+      <h3 id="trust-titre">Votre argent est protégé</h3>
+      <p id="trust-opc-texte"></p>
+    </div>
+    <div>
+      <h3 id="trust-ficav-titre">Qu'est-ce que le FICAV ?</h3>
+      <p id="trust-ficav-texte"></p>
+      <div class="trust-stat">
+        <span class="n" id="trust-stat-chiffre">63%</span>
+        <span class="t" id="trust-stat-texte"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="differentiateurs">
+  <div class="section-inner">
+    <div class="section-head" data-reveal>
+      <div>
+        <p class="eyebrow">01 — Pourquoi XPEDISYON</p>
+        <h2>Ce que les autres agences<br>ne peuvent pas vous offrir</h2>
+      </div>
+      <p>Votre avantage n'est pas le prix — c'est l'accès. Et la confiance. Et la langue du cœur.</p>
+    </div>
+    <div class="pillars" id="pillars-list"></div>
+  </div>
+</section>
+
+<section class="section" id="destinations">
+  <div class="section-inner">
+    <div class="section-head" data-reveal>
+      <div>
+        <p class="eyebrow">02 — Destinations</p>
+        <h2>Les Caraïbes comme vous ne les avez jamais vues</h2>
+      </div>
+      <p>Pas des resorts génériques. Des expériences authentiques construites avec des gens qui connaissent chaque rue.</p>
+    </div>
+    <div class="dest-grid" id="dest-list"></div>
+  </div>
+</section>
+
+
+<div class="lead-magnet">
+  <div class="lead-card" data-reveal>
+    <div class="txt">
+      <h3 id="lead-titre">Guide gratuit — 7 façons de vivre la RD comme un local</h3>
+      <p id="lead-texte">Les plages que les touristes ne trouvent jamais, les restaurants familiaux hors des sentiers battus, et les erreurs à éviter.</p>
+    </div>
+    <form class="lead-form" name="guide-gratuit" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="lead-form">
+      <input type="hidden" name="form-name" value="guide-gratuit">
+      <input type="hidden" name="bot-field" style="display:none">
+      <input type="email" name="email" placeholder="Votre courriel" required>
+      <button type="submit" id="lead-bouton">Recevoir le guide gratuit</button>
+    </form>
+  </div>
+</div>
+
+<section class="section" id="comment">
+  <div class="section-inner">
+    <div class="section-head" data-reveal>
+      <div>
+        <p class="eyebrow">03 — Comment ça marche</p>
+        <h2>Votre voyage en 5 étapes simples</h2>
+      </div>
+      <p>De la première conversation jusqu'au retour — vous n'êtes jamais seul.</p>
+    </div>
+    <div class="steps-wrap">
+      <div class="steps-line-bg"></div>
+      <div class="steps-line-fg" id="steps-line"></div>
+      <div class="steps" id="steps-list"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" style="padding-top:0" id="communaute">
+  <div class="section-inner">
+    <div class="community-block" data-reveal>
+      <div class="txt">
+        <h3 id="community-titre">Vwayaj Karayib – Kominote a</h3>
+        <p id="community-texte">Rejoignez notre groupe Facebook communautaire : conseils voyage, offres en primeur, et échanges avec d'autres familles qui voyagent en Caraïbe.</p>
+      </div>
+      <a href="#" target="_blank" class="btn btn-outline" id="community-lien">Rejoindre le groupe Facebook &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="testi-section" id="temoignages">
+  <div class="section-inner">
+    <div class="testi-head" data-reveal>
+      <div>
+        <p class="eyebrow">04 — Témoignages</p>
+        <h2>Ce que nos clients disent</h2>
+        <p>Des familles réelles, des expériences vraies. En créole comme en français.</p>
+      </div>
+      <div class="testi-nav">
+        <button id="testi-prev">&larr;</button>
+        <button id="testi-next">&rarr;</button>
+      </div>
+    </div>
+    <div class="testi-track-wrap">
+      <div class="testi-track" id="testi-track"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="section-inner">
+    <div class="contact-hero" data-reveal>
+      <p class="eyebrow">05 — Consultation gratuite</p>
+      <h2>Votre prochain voyage commence par une conversation</h2>
+      <p>30 minutes, aucun engagement. En créole si vous voulez. Réponse garantie sous 2 heures.</p>
+      <div class="hero-btns">
+        <a href="#form" class="btn btn-primary">Réserver ma consultation &rarr;</a>
+        <a href="sondage.html" class="btn btn-outline">Sondage de lancement</a>
+      </div>
+    </div>
+
+    <div class="calendly-block" data-reveal>
+      <div>
+        <p style="font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 8px">Réservation directe</p>
+        <p id="calendly-texte">Choisissez directement un créneau de 30 minutes qui vous convient — confirmation immédiate.</p>
+      </div>
+      <a href="#" target="_blank" class="btn btn-primary" id="calendly-lien">Choisir un créneau &rarr;</a>
+    </div>
+
+    <div id="form" class="contact-grid">
+      <div class="contact-info-card" data-reveal>
+        <h3>Parlons de votre voyage</h3>
+        <div class="info-item"><span class="k">WhatsApp (priorité)</span><span class="v" id="contact-whatsapp">514-XXX-XXXX</span></div>
+        <div class="info-item"><span class="k">Email</span><span class="v" id="contact-email">bonjour@xpedisyon.ca</span></div>
+        <div class="info-item"><span class="k">Basé à</span><span class="v" id="contact-ville">Montréal, Québec, Canada</span></div>
+        <div class="info-item"><span class="k">Disponibilité</span><span class="v" id="contact-dispo">7 jours sur 7 · Réponse &lt; 2h</span></div>
+      </div>
+      <div class="form-card" data-reveal>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form-grid" id="contact-form">
+          <input type="hidden" name="form-name" value="contact">
+          <input type="hidden" name="bot-field" style="display:none">
+          <label>Prénom *<input type="text" name="prenom" required placeholder="Marie"></label>
+          <label>Nom *<input type="text" name="nom" required placeholder="Estimé"></label>
+          <label class="full">Email *<input type="email" name="email" required placeholder="vous@courriel.com"></label>
+          <label>WhatsApp (optionnel)<input type="tel" name="whatsapp" placeholder="514-000-0000"></label>
+          <label>Destination souhaitée
+            <select name="destination">
+              <option value="">— Choisir —</option>
+              <option>Haïti</option>
+              <option>République Dominicaine</option>
+              <option>Floride (Miami / Orlando)</option>
+              <option>Autre Caraïbe</option>
+              <option>Je ne sais pas encore</option>
+            </select>
+          </label>
+          <label class="full">Votre message<textarea name="message" rows="4" placeholder="Combien de personnes, quelles dates, ce qui compte pour vous…"></textarea></label>
+          <button type="submit">Envoyer ma demande &rarr;</button>
+        </form>
+        <div class="form-success" id="form-success">
+          <span class="check">✓</span>
+          <h3>Mesaj voye! Message envoyé.</h3>
+          <p>Nous vous répondons dans les 2 heures, en créole ou en français selon votre préférence.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="impact-band">
+  <div class="impact-inner" data-reveal>
+    <h3 id="impact-titre">Un voyage qui redonne</h3>
+    <p id="impact-texte"></p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <p class="footer-brand">XPEDISYON</p>
+      <p class="footer-tag">Vwayaje tankou yon lokal</p>
+      <p class="footer-desc">Agence de voyages expérientiels caribéens pour la diaspora haïtienne et les communautés culturelles de Montréal. Service en créole et français.</p>
+    </div>
+    <div class="footer-col">
+      <p class="h">Navigation</p>
+      <a href="#differentiateurs">Pourquoi nous</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#comment">Comment ça marche</a>
+      <a href="#temoignages">Témoignages</a>
+    </div>
+    <div class="footer-col">
+      <p class="h">Ressources</p>
+      <a href="sondage.html">Sondage de validation</a>
+      <a href="charte-fixers.html">Charte des fixers</a>
+      <a href="#contact">Consultation gratuite</a>
+      <a href="#top">Haut de page</a>
+      <a href="/admin/">Administration</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 XPEDISYON par Zanmi Delis — Montréal, Québec</span>
+    <span>Réalisé avec Claude (Anthropic)</span>
+  </div>
+</footer>
+
+<a href="#form" class="wa-float" id="wa-float"><span class="dot"></span>Écrire sur WhatsApp</a>
+
+<script>
+// Redirection Netlify Identity vers /admin après confirmation
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) { window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; }); }
+  });
+}
+
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => document.getElementById('nav-menu').classList.remove('open'));
+});
+
+// Contact form -> Netlify + success state
+document.getElementById('contact-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  const form = e.target;
+  fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:new URLSearchParams(new FormData(form)).toString()})
+    .then(()=>{ form.style.display='none'; document.getElementById('form-success').style.display='flex'; })
+    .catch(()=>{ form.submit(); });
+});
+
+// Scroll progress bar
+window.addEventListener('scroll', () => {
+  const h = document.documentElement.scrollHeight - window.innerHeight;
+  const p = h > 0 ? (window.scrollY / h) * 100 : 0;
+  document.getElementById('progress').style.width = p + '%';
+}, {passive:true});
+
+// Reveal on scroll
+const revealItems = document.querySelectorAll('[data-reveal]');
+const revealIO = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); revealIO.unobserve(e.target); } });
+}, {threshold:0.12, rootMargin:'0px 0px -8% 0px'});
+revealItems.forEach(el => revealIO.observe(el));
+
+// Load config.json and populate everything
+fetch('config.json').then(r => r.json()).then(d => {
+  if (d.hero) {
+    document.getElementById('hero-badge').textContent = d.hero.badge;
+    document.querySelector('#top h1').innerHTML = d.hero.titre_ligne1 + '<br><em>' + d.hero.titre_ligne2 + '</em>';
+    document.getElementById('hero-mono').textContent = d.hero.sous_titre_mono;
+    document.getElementById('hero-texte').textContent = d.hero.texte;
+    document.getElementById('hero-social').textContent = d.hero.note_sociale;
+    document.getElementById('art-tag').textContent = d.hero.carte_flottante_titre;
+    document.getElementById('art-num').textContent = d.hero.carte_flottante_chiffre;
+    document.getElementById('art-text').textContent = d.hero.carte_flottante_texte;
+  }
+
+  const mq = document.getElementById('marquee');
+  const items = d.marquee || [];
+  const buildSet = () => items.map(v => '<span>' + (v.ville || v) + '</span><span class="dot">◆</span>').join('');
+  mq.innerHTML = '<div class="marquee-set">' + buildSet() + '</div><div class="marquee-set">' + buildSet() + '</div>';
+
+  const stats = document.getElementById('stats-grid');
+  (d.stats || []).forEach((s, i) => {
+    stats.innerHTML += '<div class="stat-cell"><p class="num" style="color:' + (i===3?'var(--orange)':'var(--cream)') + '">' + s.chiffre + '</p><p class="lbl">' + s.libelle + '</p></div>';
+  });
+
+  const pillars = document.getElementById('pillars-list');
+  (d.piliers || []).forEach((p, i) => {
+    const hl = i === 5 ? ' hl' : '';
+    pillars.innerHTML += '<div class="pillar' + hl + '" data-reveal><p class="idx">0' + (i+1) + '</p><h3>' + p.titre + '</h3><p>' + p.description + '</p></div>';
+  });
+
+  const dest = document.getElementById('dest-list');
+  (d.destinations || []).forEach(x => {
+    const bgStyle = x.image ? ('background-image:url(\'' + x.image + '\');background-size:cover;background-position:center;') : '';
+    dest.innerHTML += '<a href="sondage.html" class="dest-card" data-reveal>' +
+      '<div class="dest-bg" style="' + bgStyle + '"></div>' +
+      '<div class="dest-overlay"></div>' +
+      '<div class="dest-tag">' + x.tag + '</div>' +
+      '<div class="dest-content"><h3>' + x.nom + '</h3><p class="sub">' + x.sous_titre + '</p>' +
+      '<div class="dest-body"><p>' + x.detail + '</p><span>Planifier ce voyage &rarr;</span></div></div></a>';
+  });
+
+  const steps = document.getElementById('steps-list');
+  (d.etapes || []).forEach((s, i) => {
+    steps.innerHTML += '<div data-reveal><div class="step-dot">' + (i+1) + '</div><h4>' + s.titre + '</h4><p>' + s.description + '</p></div>';
+  });
+
+  const track = document.getElementById('testi-track');
+  (d.temoignages || []).forEach(t => {
+    const avatar = t.photo
+      ? '<span class="testi-avatar" style="background-image:url(\'' + t.photo + '\');background-size:cover;background-position:center"></span>'
+      : '<span class="testi-avatar" style="background:' + t.couleur + ';color:' + t.texte_couleur + '">' + t.initiales + '</span>';
+    track.innerHTML += '<div class="testi-card"><span class="stars">★★★★★</span><p class="quote">« ' + t.texte + ' »</p>' +
+      '<div class="testi-author">' + avatar +
+      '<div><p class="nm">' + t.nom + '</p><p class="ctx">' + t.contexte + '</p></div></div></div>';
+  });
+  track.innerHTML += '<div class="testi-card cta"><p>Votre témoignage ici, après votre premier voyage avec nous.</p><a href="#contact">Commencer la conversation &rarr;</a></div>';
+
+  if (d.contact) {
+    document.getElementById('contact-whatsapp').textContent = d.contact.whatsapp_affiche || '';
+    document.getElementById('contact-email').textContent = d.contact.email || '';
+    document.getElementById('contact-ville').textContent = d.contact.ville || '';
+    document.getElementById('contact-dispo').textContent = d.contact.disponibilite || '';
+    if (d.contact.whatsapp) document.getElementById('wa-float').href = 'https://wa.me/' + d.contact.whatsapp;
+  }
+
+  // Vraies photos hero (placeholders publics Unsplash, remplaçables via /admin)
+  if (d.hero.photo_principale) {
+    document.getElementById('art-main').style.backgroundImage = "url('" + d.hero.photo_principale + "')";
+    document.getElementById('art-main').style.backgroundSize = 'cover';
+    document.getElementById('art-main').style.backgroundPosition = 'center';
+  }
+  if (d.hero.photo_secondaire) {
+    document.getElementById('art-second').style.backgroundImage = "url('" + d.hero.photo_secondaire + "')";
+    document.getElementById('art-second').style.backgroundSize = 'cover';
+    document.getElementById('art-second').style.backgroundPosition = 'center';
+  }
+
+  // Bloc confiance OPC / FICAV
+  if (d.confiance) {
+    document.getElementById('trust-opc-line').textContent = '● ' + (d.confiance.titre === 'Votre argent est protégé' ? "En affiliation avec une agence détentrice d'un permis OPC" : '');
+    document.getElementById('trust-titre').textContent = d.confiance.titre;
+    document.getElementById('trust-opc-texte').textContent = d.confiance.opc_texte;
+    document.getElementById('trust-ficav-titre').textContent = d.confiance.ficav_titre;
+    document.getElementById('trust-ficav-texte').textContent = d.confiance.ficav_texte;
+    document.getElementById('trust-stat-chiffre').textContent = d.confiance.stat_chiffre;
+    document.getElementById('trust-stat-texte').textContent = d.confiance.stat_texte;
+  }
+
+  // Aimant à prospects
+  if (d.aimant) {
+    document.getElementById('lead-titre').textContent = d.aimant.titre_fr;
+    document.getElementById('lead-texte').textContent = d.aimant.texte_fr;
+    document.getElementById('lead-bouton').textContent = d.aimant.bouton_fr;
+  }
+  document.getElementById('lead-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    const form = e.target;
+    fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:new URLSearchParams(new FormData(form)).toString()})
+      .then(()=>{ form.innerHTML = '<p style="color:var(--mint);font-size:14px;font-weight:600">Merci ! Vérifiez votre courriel.</p>'; })
+      .catch(()=>{ form.submit(); });
+  });
+
+  // Communauté Facebook
+  if (d.communaute) {
+    document.getElementById('community-titre').textContent = d.communaute.facebook_groupe_nom;
+    document.getElementById('community-texte').textContent = d.communaute.facebook_groupe_texte;
+    document.getElementById('community-lien').href = d.communaute.facebook_groupe_url;
+  }
+
+  // Calendly
+  if (d.calendly) {
+    document.getElementById('calendly-texte').textContent = d.calendly.texte;
+    document.getElementById('calendly-lien').href = d.calendly.url;
+  }
+
+  // Impact
+  if (d.impact) {
+    document.getElementById('impact-titre').textContent = d.impact.titre;
+    document.getElementById('impact-texte').textContent = d.impact.texte;
+  }
+
+  // Bascule de langue FR / Kreyòl
+  if (d.langue) {
+    const L = d.langue;
+    function applyLang(lang){
+      const suf = lang === 'kr' ? '_kr' : '_fr';
+      document.getElementById('nav-pourquoi').textContent = L['nav_pourquoi' + suf];
+      document.getElementById('nav-destinations').textContent = L['nav_destinations' + suf];
+      document.getElementById('nav-groupes').textContent = L['nav_groupes' + suf];
+      document.getElementById('nav-comment').textContent = L['nav_comment' + suf];
+      document.getElementById('nav-faq').textContent = L['nav_faq' + suf];
+      document.getElementById('nav-journal').textContent = L['nav_journal' + suf];
+      document.getElementById('nav-cta').lastChild ? null : null;
+      document.getElementById('nav-cta').textContent = L['nav_cta' + suf];
+      document.getElementById('hero-badge').textContent = L['badge' + suf];
+      document.querySelector('#top h1').innerHTML = L['hero_titre1' + suf] + '<br><em>' + L['hero_titre2' + suf] + '</em>';
+      document.getElementById('hero-texte').textContent = L['hero_texte' + suf];
+      document.getElementById('lang-fr').classList.toggle('active', lang==='fr');
+      document.getElementById('lang-kr').classList.toggle('active', lang==='kr');
+    }
+    document.getElementById('lang-fr').addEventListener('click', () => applyLang('fr'));
+    document.getElementById('lang-kr').addEventListener('click', () => applyLang('kr'));
+  }
+
+  // Re-observe newly injected [data-reveal] nodes
+  document.querySelectorAll('[data-reveal]').forEach(el => { if (!el.classList.contains('in')) revealIO.observe(el); });
+
+  // Steps progress line on scroll
+  const stepEls = Array.from(document.querySelectorAll('#steps-list > div'));
+  const sIO = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const i = stepEls.indexOf(e.target);
+      if (i < 0) return;
+      const pct = ((i + 0.5) / stepEls.length) * 100;
+      const cur = parseFloat(document.getElementById('steps-line').style.width) || 0;
+      if (pct > cur) document.getElementById('steps-line').style.width = pct + '%';
+      const dot = e.target.querySelector('.step-dot');
+      if (dot) { dot.style.background = 'var(--orange)'; dot.style.color = 'var(--dark)'; dot.style.borderColor = 'var(--orange)'; }
+    });
+  }, {threshold:0.6});
+  stepEls.forEach(el => sIO.observe(el));
+
+  // Testimonial carousel
+  let idx = 0;
+  function goTesti(i){
+    const cards = track.children;
+    const max = Math.max(0, cards.length - 3);
+    idx = i < 0 ? max : (i > max ? 0 : i);
+    const w = cards[0] ? cards[0].getBoundingClientRect().width + 18 : 0;
+    track.style.transform = 'translateX(' + (-idx * w) + 'px)';
+  }
+  document.getElementById('testi-prev').addEventListener('click', () => goTesti(idx - 1));
+  document.getElementById('testi-next').addEventListener('click', () => goTesti(idx + 1));
+  setInterval(() => goTesti(idx + 1), 5500);
+}).catch(err => console.warn('config.json non chargé :', err));
+</script>
+</body>
+</html>

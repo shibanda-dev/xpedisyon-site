@@ -1,0 +1,323 @@
+{
+  "hero": {
+    "badge": "Nou pale kreyòl · Réponse < 2h · 7j/7",
+    "titre_ligne1": "Vwayaje tankou",
+    "titre_ligne2": "yon lokal",
+    "sous_titre_mono": "Voyager comme un local — organisé comme un pro",
+    "texte": "L'agence de la diaspora haïtienne de Montréal. Haïti, République Dominicaine, Floride — avec quelqu'un qui parle votre langue, connaît les gens sur place, et s'occupe de tout.",
+    "note_sociale": "Familles, couples et groupes d'église déjà partis avec nous en 2025.",
+    "carte_flottante_titre": "Proposition envoyée",
+    "carte_flottante_chiffre": "24 heures",
+    "carte_flottante_texte": "Itinéraire jour par jour, hébergements, prix détaillé.",
+    "photo_principale": "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1200&q=80&fit=crop",
+    "photo_secondaire": "https://images.unsplash.com/photo-1580541631950-7282082b53ce?w=800&q=80&fit=crop"
+  },
+  "marquee": [
+    {
+      "ville": "Punta Cana"
+    },
+    {
+      "ville": "Cap-Haïtien"
+    },
+    {
+      "ville": "Santo Domingo"
+    },
+    {
+      "ville": "Jacmel"
+    },
+    {
+      "ville": "Miami"
+    },
+    {
+      "ville": "Santiago"
+    },
+    {
+      "ville": "Orlando"
+    },
+    {
+      "ville": "Port-au-Prince"
+    },
+    {
+      "ville": "Jamaïque"
+    },
+    {
+      "ville": "Barbade"
+    }
+  ],
+  "stats": [
+    {
+      "chiffre": "120K+",
+      "libelle": "Haïtiens dans le Grand Montréal"
+    },
+    {
+      "chiffre": "24h",
+      "libelle": "Pour recevoir votre proposition personnalisée"
+    },
+    {
+      "chiffre": "3",
+      "libelle": "Destinations phares : Haïti · RD · Floride"
+    },
+    {
+      "chiffre": "0 $",
+      "libelle": "Pour la consultation initiale"
+    }
+  ],
+  "piliers": [
+    {
+      "titre": "Service en créole et en français",
+      "description": "Nous parlons votre langue — pas seulement pour communiquer, mais pour comprendre ce que ce voyage signifie vraiment pour vous et votre famille."
+    },
+    {
+      "titre": "Partenaires locaux sur place",
+      "description": "Des fixers de confiance en République Dominicaine, en Floride et en Haïti. Ils ouvrent des portes que les plateformes en ligne ne connaissent même pas."
+    },
+    {
+      "titre": "Proposition personnalisée en 24h",
+      "description": "Après une consultation de 30 minutes, vous recevez un document complet : itinéraire jour par jour, hébergements, prix détaillé — fait pour vous, pas pour une famille générique."
+    },
+    {
+      "titre": "Spécialiste famille et groupe",
+      "description": "Famille nombreuse, Mamie qui vient aussi, groupe de l'église, voyage de célébration — nous gérons la logistique complexe que les plateformes ne savent pas gérer."
+    },
+    {
+      "titre": "Accompagnement sécurité",
+      "description": "Pour Haïti et toute destination sensible, nos partenaires locaux nous transmettent l'information en temps réel. Vous voyagez informé, pas dans l'incertitude."
+    },
+    {
+      "titre": "Disponible 7j/7 sur WhatsApp",
+      "description": "Avant, pendant et après le voyage. Si quelque chose se passe sur place, vous n'êtes pas seul. Quelqu'un répond — en moins de 2 heures, toujours."
+    }
+  ],
+  "destinations": [
+    {
+      "tag": "Priorité #1",
+      "nom": "République Dominicaine",
+      "sous_titre": "Punta Cana · Santiago · Santo Domingo",
+      "detail": "Le voyage le plus demandé par nos familles — plages, culture et proximité d'Haïti.",
+      "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1000&q=80&fit=crop"
+    },
+    {
+      "tag": "Retour aux racines",
+      "nom": "Haïti",
+      "sous_titre": "Port-au-Prince · Cap-Haïtien · Jacmel",
+      "detail": "Un accompagnement sécurité et logistique pensé pour un retour serein.",
+      "image": "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1000&q=80&fit=crop"
+    },
+    {
+      "tag": "Diaspora & famille",
+      "nom": "Floride & Caraïbes",
+      "sous_titre": "Miami · Orlando · Jamaïque · Barbade",
+      "detail": "Parcs, cousins à Miami, croisières de groupe — la logistique familiale gérée de bout en bout.",
+      "image": "https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?w=1000&q=80&fit=crop"
+    }
+  ],
+  "etapes": [
+    {
+      "titre": "Contactez-nous",
+      "description": "WhatsApp, Facebook ou formulaire. Réponse en moins de 2h, 7j/7."
+    },
+    {
+      "titre": "Consultation gratuite",
+      "description": "30 minutes par téléphone ou vidéo. Votre famille, vos envies, votre budget."
+    },
+    {
+      "titre": "Proposition en 24h",
+      "description": "Itinéraire jour par jour, hôtels, activités, prix détaillé."
+    },
+    {
+      "titre": "Confirmation",
+      "description": "Nous réservons tout. Paiement via notre agence partenaire certifiée OPC."
+    },
+    {
+      "titre": "Voyage & retour",
+      "description": "Nos fixers sur place. Vous rentrez avec des souvenirs, pas du stress."
+    }
+  ],
+  "temoignages": [
+    {
+      "initiales": "JE",
+      "couleur": "#E1613A",
+      "texte_couleur": "#14100D",
+      "texte": "Mwen pa t janm panse m t ap ka rele manman m nan Santiago pou li di l ke nou sou wout pou ede l. XPEDISYON pa t jis yon ajan — se yon zanmi ki konprann sa sa vle di vwayaje lwen fanmi w.",
+      "nom": "Jean-Pierre E.",
+      "contexte": "Famille 5 personnes · RD 2025"
+    },
+    {
+      "initiales": "CP",
+      "couleur": "#1F7A6B",
+      "texte_couleur": "#F6F1E8",
+      "texte": "Apre 5 an san ale Ayiti, mwen te pè. Yo te òganize tout bagay pou mwen — depi avyon an jouk lakay manman m. Mwen te santi m an sekirite tout tan.",
+      "nom": "Claudette P.",
+      "contexte": "Couple · Haïti 2025"
+    },
+    {
+      "initiales": "EB",
+      "couleur": "#E8B44A",
+      "texte_couleur": "#14100D",
+      "texte": "Notre groupe de 18 personnes n'avait jamais voyagé ensemble. XPEDISYON a géré chaque détail sans un seul problème. Le pasteur Desrosiers recommande sans hésitation.",
+      "nom": "Comité voyage",
+      "contexte": "Église Bethel · Punta Cana 2025"
+    }
+  ],
+  "contact": {
+    "whatsapp": "15141234567",
+    "whatsapp_affiche": "514-XXX-XXXX",
+    "email": "bonjour@xpedisyon.ca",
+    "ville": "Montréal, Québec, Canada",
+    "disponibilite": "7 jours sur 7 · Réponse < 2h"
+  },
+  "langue": {
+    "nav_pourquoi_fr": "Pourquoi nous",
+    "nav_pourquoi_kr": "Poukisa nou",
+    "nav_destinations_fr": "Destinations",
+    "nav_destinations_kr": "Destinasyon",
+    "nav_comment_fr": "Comment ça marche",
+    "nav_comment_kr": "Kijan sa mache",
+    "nav_temoignages_fr": "Témoignages",
+    "nav_temoignages_kr": "Temwayaj",
+    "nav_groupes_fr": "Groupes & mariages",
+    "nav_groupes_kr": "Gwoup & maryaj",
+    "nav_faq_fr": "FAQ",
+    "nav_faq_kr": "Kesyon",
+    "nav_journal_fr": "Journal",
+    "nav_journal_kr": "Jounal",
+    "nav_cta_fr": "Consultation gratuite",
+    "nav_cta_kr": "Konsiltasyon gratis",
+    "badge_fr": "Nou pale kreyòl · Réponse < 2h · 7j/7",
+    "badge_kr": "Nou pale kreyòl · Repons nan mwens pase 2èdtan · 7j/7",
+    "hero_titre1_fr": "Vwayaje tankou",
+    "hero_titre1_kr": "Vwayaje tankou",
+    "hero_titre2_fr": "yon lokal",
+    "hero_titre2_kr": "yon lokal",
+    "hero_texte_fr": "L'agence de la diaspora haïtienne de Montréal. Haïti, République Dominicaine, Floride — avec quelqu'un qui parle votre langue, connaît les gens sur place, et s'occupe de tout.",
+    "hero_texte_kr": "Ajans vwayaj dyaspora ayisyen Monreyal la. Ayiti, Repiblik Dominikèn, Florid — ak yon moun ki pale lang ou, ki konnen moun sou plas, e ki okipe tout bagay pou ou.",
+    "btn_consultation_fr": "Consultation gratuite",
+    "btn_consultation_kr": "Konsiltasyon gratis",
+    "btn_sondage_fr": "Participer au sondage",
+    "btn_sondage_kr": "Patisipe nan sondaj la",
+    "toggle_label_fr": "KR",
+    "toggle_label_kr": "FR"
+  },
+  "confiance": {
+    "titre": "Votre argent est protégé",
+    "opc_texte": "XPEDISYON opère en affiliation avec une agence de voyages détentrice d'un permis OPC valide au Québec — le cadre légal obligatoire pour vendre des voyages. Numéro de permis à confirmer dès la signature du contrat d'affiliation.",
+    "ficav_titre": "Qu'est-ce que le FICAV ?",
+    "ficav_texte": "Le Fonds d'indemnisation des clients des agents de voyages protège votre argent en cas de faillite d'une agence ou d'annulation de vol — gratuitement depuis le 1er janvier 2024. En 2023-2024 seulement, le FICAV a remboursé environ 185 voyageurs pour un total de 139 000 $. Pourtant, 54% des voyageurs ignorent son existence.",
+    "stat_chiffre": "63%",
+    "stat_texte": "des voyageurs choisiraient un agent plutôt qu'une plateforme en ligne une fois informés du FICAV — source OPC/BIP Recherche 2023"
+  },
+  "faq": [
+    {
+      "question": "Est-ce que ça coûte plus cher de réserver avec XPEDISYON qu'en ligne ?",
+      "reponse": "Non. Le prix du voyage lui-même (vol, hôtel) est identique à ce que vous trouveriez ailleurs — c'est le fournisseur qui fixe ce prix, pas nous. Ce que vous payez en plus, ce sont des frais de service transparents, communiqués avant toute réservation, qui couvrent notre temps, notre réseau de fixers locaux, et notre accompagnement du début à la fin."
+    },
+    {
+      "question": "Quels sont vos frais de service exactement ?",
+      "reponse": "Entre 100 $ et 250 $ CAD par dossier selon la complexité (voyage simple, famille nombreuse, groupe). Le montant exact vous est confirmé avant que vous ne payiez quoi que ce soit — jamais de surprise sur la facture finale."
+    },
+    {
+      "question": "Mon argent est-il protégé si quelque chose arrive à l'agence ?",
+      "reponse": "Oui. Toute réservation passe par une agence affiliée détentrice d'un permis OPC, et votre paiement est couvert par le FICAV (Fonds d'indemnisation des clients des agents de voyages) — une protection gratuite depuis 2024."
+    },
+    {
+      "question": "Pourquoi ne proposez-vous pas Haïti comme destination principale en ce moment ?",
+      "reponse": "Par honnêteté et par souci de votre sécurité. La situation actuelle limite fortement les vols réguliers vers Port-au-Prince. Nous suivons la situation de près via nos contacts locaux et nous vous guiderons dès que la destination redevient accessible en toute sécurité. En attendant, nous privilégions la République Dominicaine et la Floride."
+    },
+    {
+      "question": "Je ne parle pas français couramment, est-ce un problème ?",
+      "reponse": "Pas du tout — nous accompagnons en créole haïtien, en français, et en espagnol de base. Écrivez-nous dans la langue avec laquelle vous êtes le plus à l'aise."
+    },
+    {
+      "question": "Comment se passe le paiement ?",
+      "reponse": "Le paiement du voyage se fait directement à l'agence affiliée détentrice du permis OPC — jamais à un compte personnel. Les frais de service sont facturés séparément, avec reçu."
+    }
+  ],
+  "aimant": {
+    "titre_fr": "Guide gratuit — 7 façons de vivre la RD comme un local",
+    "titre_kr": "Gid gratis — 7 fason viv Sen-Domeng tankou yon lokal",
+    "texte_fr": "Les plages que les touristes ne trouvent jamais, les restaurants familiaux hors des sentiers battus, et les erreurs à éviter — écrit avec nos fixers sur place.",
+    "bouton_fr": "Recevoir le guide gratuit",
+    "bouton_kr": "Resevwa gid gratis la"
+  },
+  "calendly": {
+    "url": "https://calendly.com/xpedisyon/consultation-gratuite",
+    "texte": "Choisissez directement un créneau de 30 minutes qui vous convient — confirmation immédiate."
+  },
+  "communaute": {
+    "facebook_groupe_nom": "Vwayaj Karayib – Kominote a",
+    "facebook_groupe_url": "https://facebook.com/groups/xpedisyon",
+    "facebook_groupe_texte": "Rejoignez notre groupe Facebook communautaire : conseils voyage, offres en primeur, et échanges avec d'autres familles qui voyagent en Caraïbe.",
+    "instagram_url": "https://instagram.com/xpedisyon"
+  },
+  "groupes": {
+    "titre": "Voyages de groupe, mariages & retrouvailles à destination",
+    "intro": "Un contrat de groupe bien organisé génère plus de valeur — pour vous comme pour nous — qu'une douzaine de réservations individuelles. XPEDISYON gère la logistique complexe de A à Z.",
+    "packages": [
+      {
+        "nom": "Retraite spirituelle en Caraïbe",
+        "cible": "Églises et associations religieuses haïtiennes",
+        "detail": "Haïti ou République Dominicaine, 7 à 10 jours, vol + hôtel + excursions + guide. Commission de référence offerte à l'organisation.",
+        "taille": "12 à 60 personnes"
+      },
+      {
+        "nom": "Mariage & retrouvailles à destination",
+        "cible": "Familles élargies, comités de mariage",
+        "detail": "Coordination complète : hébergement du groupe, transport, salle de réception, photographe local, logistique des invités.",
+        "taille": "15 à 40 personnes"
+      },
+      {
+        "nom": "Voyage associatif ou communautaire",
+        "cible": "Associations culturelles, comités de quartier",
+        "detail": "Proposition écrite formelle, présentation possible devant le comité, tarif de groupe négocié.",
+        "taille": "10 à 30 personnes"
+      }
+    ],
+    "cta_texte": "Vous organisez un groupe ? Parlons-en — la première consultation est gratuite."
+  },
+  "charte_fixers": {
+    "titre": "Notre charte des fixers",
+    "intro": "Nos partenaires locaux ne sont pas de simples contacts — ils sont notre engagement envers vous. Voici les critères que chaque fixer XPEDISYON doit respecter avant d'être recommandé à nos clients.",
+    "criteres": [
+      {
+        "titre": "Ancrage local réel",
+        "description": "Originaire de la région ou y résidant depuis au moins 5 ans."
+      },
+      {
+        "titre": "Testé personnellement",
+        "description": "Aucun fixer n'est recommandé sans avoir été testé par XPEDISYON ou vérifié par des références fiables et vérifiables."
+      },
+      {
+        "titre": "Rémunération équitable",
+        "description": "Chaque fixer est rémunéré à un taux juste et transparent — jamais en dessous du marché local."
+      },
+      {
+        "titre": "Réactivité garantie",
+        "description": "Moins de 4 heures pour une demande normale, moins de 30 minutes en situation d'urgence."
+      },
+      {
+        "titre": "Sécurité d'abord",
+        "description": "Formation aux protocoles de sécurité de base et connaissance à jour de la situation locale."
+      },
+      {
+        "titre": "Respect de la communauté visitée",
+        "description": "Aucune activité proposée qui exploite ou déprécie les communautés locales."
+      }
+    ]
+  },
+  "impact": {
+    "titre": "Un voyage qui redonne",
+    "texte": "Pour chaque voyage confirmé, une partie de nos frais de service est réinvestie directement dans les communautés locales que nous visitons — écoles, artisans, familles de nos fixers. Ce n'est pas une promesse marketing : c'est documenté, dossier par dossier, et communiqué sobrement à nos clients qui le souhaitent."
+  },
+  "journal": [
+    {
+      "titre": "La République Dominicaine hors tout-inclus : 5 expériences que Booking ne vous montrera jamais",
+      "date": "Janvier 2026",
+      "extrait": "Punta Cana n'est pas que des resorts. Voici ce que nos fixers de Santiago et Santo Domingo font découvrir à nos clients — loin des bracelets tout-inclus.",
+      "contenu": "Quand on pense République Dominicaine, on pense souvent resort tout-inclus, buffet à volonté et plage privée fermée aux locaux. C'est une des Caraïbes possibles — mais ce n'est pas la seule, et certainement pas la plus mémorable.\n\nNos fixers à Santiago et Santo Domingo nous font découvrir, voyage après voyage, une autre RD : les paladares familiaux où l'on mange le vrai sancocho, les marchés du samedi matin à Santiago où les vendeurs connaissent votre nom après une visite, les plages du Nord encore fréquentées presque exclusivement par des familles dominicaines.\n\nCinq expériences que nous recommandons systématiquement à nos clients qui veulent voir au-delà du tout-inclus : le marché de Cibao un samedi matin, un dîner chez une famille locale organisé par notre fixer, une excursion aux chutes du 27 Cañones loin des bus de tourisme, une soirée de merengue dans un vrai colmado de quartier, et une visite guidée du Zona Colonial de Santo Domingo par un guide qui y a grandi.\n\nAucune de ces expériences n'apparaît sur les plateformes de réservation en ligne. C'est exactement pour ça que XPEDISYON existe."
+    }
+  ],
+  "journal_meta": {
+    "titre": "Journal de bord",
+    "sous_titre": "Nos découvertes de terrain, un article par mois."
+  }
+}

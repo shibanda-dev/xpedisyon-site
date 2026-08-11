@@ -1,0 +1,224 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: simple
+locale: "fr"
+
+collections:
+  - name: "contenu"
+    label: "Contenu du site XPEDISYON"
+    files:
+      - name: "config"
+        label: "Tout le contenu du site"
+        file: "config.json"
+        fields:
+          - label: "Hero (haut de page)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge", name: "badge", widget: "string" }
+              - { label: "Titre — ligne 1", name: "titre_ligne1", widget: "string" }
+              - { label: "Titre — ligne 2", name: "titre_ligne2", widget: "string" }
+              - { label: "Sous-titre mono", name: "sous_titre_mono", widget: "string" }
+              - { label: "Texte principal", name: "texte", widget: "text" }
+              - { label: "Note sociale", name: "note_sociale", widget: "string" }
+              - { label: "Carte flottante — titre", name: "carte_flottante_titre", widget: "string" }
+              - { label: "Carte flottante — chiffre", name: "carte_flottante_chiffre", widget: "string" }
+              - { label: "Carte flottante — texte", name: "carte_flottante_texte", widget: "string" }
+              - { label: "Photo principale (droite, grande)", name: "photo_principale", widget: "image" }
+              - { label: "Photo secondaire (gauche, flottante)", name: "photo_secondaire", widget: "image" }
+
+          - label: "Bandeau défilant (villes)"
+            name: "marquee"
+            widget: "list"
+            field: { label: "Ville", name: "ville", widget: "string" }
+
+          - label: "Statistiques (4 chiffres clés)"
+            name: "stats"
+            widget: "list"
+            max: 4
+            min: 4
+            fields:
+              - { label: "Chiffre", name: "chiffre", widget: "string" }
+              - { label: "Libellé", name: "libelle", widget: "string" }
+
+          - label: "Piliers de différenciation (6)"
+            name: "piliers"
+            widget: "list"
+            fields:
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Destinations (3)"
+            name: "destinations"
+            widget: "list"
+            fields:
+              - { label: "Étiquette (tag)", name: "tag", widget: "string" }
+              - { label: "Nom de la destination", name: "nom", widget: "string" }
+              - { label: "Sous-titre", name: "sous_titre", widget: "string" }
+              - { label: "Détail (affiché au survol)", name: "detail", widget: "text" }
+              - { label: "Photo", name: "image", widget: "image", required: false }
+
+          - label: "Étapes du processus (5)"
+            name: "etapes"
+            widget: "list"
+            fields:
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Témoignages"
+            name: "temoignages"
+            widget: "list"
+            fields:
+              - { label: "Initiales (avatar)", name: "initiales", widget: "string" }
+              - { label: "Couleur de fond de l'avatar (hex)", name: "couleur", widget: "string" }
+              - { label: "Couleur du texte de l'avatar (hex)", name: "texte_couleur", widget: "string" }
+              - { label: "Texte du témoignage", name: "texte", widget: "text" }
+              - { label: "Nom du client", name: "nom", widget: "string" }
+              - { label: "Contexte", name: "contexte", widget: "string" }
+              - { label: "Photo réelle du client (optionnel, remplace l'avatar)", name: "photo", widget: "image", required: false }
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "WhatsApp (indicatif + numéro)", name: "whatsapp", widget: "string" }
+              - { label: "WhatsApp affiché", name: "whatsapp_affiche", widget: "string" }
+              - { label: "Courriel", name: "email", widget: "string" }
+              - { label: "Ville", name: "ville", widget: "string" }
+              - { label: "Disponibilité", name: "disponibilite", widget: "string" }
+
+          - label: "Bascule de langue FR / Kreyòl"
+            name: "langue"
+            widget: "object"
+            fields:
+              - { label: "Nav — Pourquoi nous (FR)", name: "nav_pourquoi_fr", widget: "string" }
+              - { label: "Nav — Pourquoi nous (KR)", name: "nav_pourquoi_kr", widget: "string" }
+              - { label: "Nav — Destinations (FR)", name: "nav_destinations_fr", widget: "string" }
+              - { label: "Nav — Destinations (KR)", name: "nav_destinations_kr", widget: "string" }
+              - { label: "Nav — Groupes (FR)", name: "nav_groupes_fr", widget: "string" }
+              - { label: "Nav — Groupes (KR)", name: "nav_groupes_kr", widget: "string" }
+              - { label: "Nav — Comment ça marche (FR)", name: "nav_comment_fr", widget: "string" }
+              - { label: "Nav — Comment ça marche (KR)", name: "nav_comment_kr", widget: "string" }
+              - { label: "Nav — Témoignages (FR)", name: "nav_temoignages_fr", widget: "string" }
+              - { label: "Nav — Témoignages (KR)", name: "nav_temoignages_kr", widget: "string" }
+              - { label: "Nav — FAQ (FR)", name: "nav_faq_fr", widget: "string" }
+              - { label: "Nav — FAQ (KR)", name: "nav_faq_kr", widget: "string" }
+              - { label: "Nav — Journal (FR)", name: "nav_journal_fr", widget: "string" }
+              - { label: "Nav — Journal (KR)", name: "nav_journal_kr", widget: "string" }
+              - { label: "Nav — CTA (FR)", name: "nav_cta_fr", widget: "string" }
+              - { label: "Nav — CTA (KR)", name: "nav_cta_kr", widget: "string" }
+              - { label: "Badge (FR)", name: "badge_fr", widget: "string" }
+              - { label: "Badge (KR)", name: "badge_kr", widget: "string" }
+              - { label: "Titre ligne 1 (FR)", name: "hero_titre1_fr", widget: "string" }
+              - { label: "Titre ligne 1 (KR)", name: "hero_titre1_kr", widget: "string" }
+              - { label: "Titre ligne 2 (FR)", name: "hero_titre2_fr", widget: "string" }
+              - { label: "Titre ligne 2 (KR)", name: "hero_titre2_kr", widget: "string" }
+              - { label: "Texte hero (FR)", name: "hero_texte_fr", widget: "text" }
+              - { label: "Texte hero (KR)", name: "hero_texte_kr", widget: "text" }
+              - { label: "Bouton consultation (FR)", name: "btn_consultation_fr", widget: "string" }
+              - { label: "Bouton consultation (KR)", name: "btn_consultation_kr", widget: "string" }
+              - { label: "Bouton sondage (FR)", name: "btn_sondage_fr", widget: "string" }
+              - { label: "Bouton sondage (KR)", name: "btn_sondage_kr", widget: "string" }
+              - { label: "Étiquette du bouton bascule (FR affiché)", name: "toggle_label_fr", widget: "string" }
+              - { label: "Étiquette du bouton bascule (KR affiché)", name: "toggle_label_kr", widget: "string" }
+
+          - label: "Bloc confiance OPC / FICAV"
+            name: "confiance"
+            widget: "object"
+            fields:
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Texte OPC", name: "opc_texte", widget: "text" }
+              - { label: "Titre FICAV", name: "ficav_titre", widget: "string" }
+              - { label: "Texte FICAV", name: "ficav_texte", widget: "text" }
+              - { label: "Statistique — chiffre", name: "stat_chiffre", widget: "string" }
+              - { label: "Statistique — texte", name: "stat_texte", widget: "text" }
+
+          - label: "FAQ"
+            name: "faq"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Réponse", name: "reponse", widget: "text" }
+
+          - label: "Aimant à prospects (guide gratuit)"
+            name: "aimant"
+            widget: "object"
+            fields:
+              - { label: "Titre (FR)", name: "titre_fr", widget: "string" }
+              - { label: "Titre (KR)", name: "titre_kr", widget: "string" }
+              - { label: "Texte (FR)", name: "texte_fr", widget: "text" }
+              - { label: "Bouton (FR)", name: "bouton_fr", widget: "string" }
+              - { label: "Bouton (KR)", name: "bouton_kr", widget: "string" }
+
+          - label: "Calendly"
+            name: "calendly"
+            widget: "object"
+            fields:
+              - { label: "URL Calendly", name: "url", widget: "string" }
+              - { label: "Texte d'accompagnement", name: "texte", widget: "text" }
+
+          - label: "Communauté (Facebook, Instagram)"
+            name: "communaute"
+            widget: "object"
+            fields:
+              - { label: "Nom du groupe Facebook", name: "facebook_groupe_nom", widget: "string" }
+              - { label: "URL du groupe Facebook", name: "facebook_groupe_url", widget: "string" }
+              - { label: "Texte de présentation", name: "facebook_groupe_texte", widget: "text" }
+              - { label: "URL Instagram", name: "instagram_url", widget: "string" }
+
+          - label: "Groupes & mariages"
+            name: "groupes"
+            widget: "object"
+            fields:
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Introduction", name: "intro", widget: "text" }
+              - label: "Forfaits"
+                name: "packages"
+                widget: "list"
+                fields:
+                  - { label: "Nom du forfait", name: "nom", widget: "string" }
+                  - { label: "Cible", name: "cible", widget: "string" }
+                  - { label: "Détail", name: "detail", widget: "text" }
+                  - { label: "Taille de groupe", name: "taille", widget: "string" }
+              - { label: "Texte d'appel à l'action", name: "cta_texte", widget: "string" }
+
+          - label: "Charte des fixers"
+            name: "charte_fixers"
+            widget: "object"
+            fields:
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Introduction", name: "intro", widget: "text" }
+              - label: "Critères"
+                name: "criteres"
+                widget: "list"
+                fields:
+                  - { label: "Titre du critère", name: "titre", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Tourisme à impact"
+            name: "impact"
+            widget: "object"
+            fields:
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Texte", name: "texte", widget: "text" }
+
+          - label: "Journal — métadonnées de la page"
+            name: "journal_meta"
+            widget: "object"
+            fields:
+              - { label: "Titre de la page", name: "titre", widget: "string" }
+              - { label: "Sous-titre", name: "sous_titre", widget: "string" }
+
+          - label: "Journal — articles"
+            name: "journal"
+            widget: "list"
+            fields:
+              - { label: "Titre de l'article", name: "titre", widget: "string" }
+              - { label: "Date", name: "date", widget: "string" }
+              - { label: "Extrait (résumé court)", name: "extrait", widget: "text" }
+              - { label: "Contenu complet (paragraphes séparés par une ligne vide)", name: "contenu", widget: "text" }

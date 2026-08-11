@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charte des fixers — XPEDISYON</title>
+<meta name="description" content="Les critères que chaque partenaire local XPEDISYON doit respecter avant d'être recommandé à nos clients.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><b>XPEDISYON</b><span>par Zanmi Delis · Montréal</span></a>
+    <div class="nav-links" id="nav-menu">
+      <a href="index.html#differentiateurs">Pourquoi nous</a>
+      <a href="index.html#destinations">Destinations</a>
+      <a href="groupes-mariages.html">Groupes &amp; mariages</a>
+      <a href="faq.html">FAQ</a>
+      <a href="journal.html">Journal</a>
+      <a href="index.html#contact" class="nav-cta">Consultation gratuite</a>
+    </div>
+    <div class="hamburger" onclick="document.getElementById('nav-menu').classList.toggle('open')"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="section-inner" data-reveal>
+    <p class="eyebrow">Engagement</p>
+    <h1 id="cf-titre">Notre charte des fixers</h1>
+    <p id="cf-intro">Nos partenaires locaux ne sont pas de simples contacts — ils sont notre engagement envers vous.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:10px">
+  <div class="section-inner">
+    <div class="charte-grid" id="charte-grid" data-reveal></div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <p class="footer-brand">XPEDISYON</p>
+      <p class="footer-tag">Vwayaje tankou yon lokal</p>
+      <p class="footer-desc">Agence de voyages expérientiels caribéens pour la diaspora haïtienne et les communautés culturelles de Montréal.</p>
+    </div>
+    <div class="footer-col">
+      <p class="h">Navigation</p>
+      <a href="index.html#differentiateurs">Pourquoi nous</a>
+      <a href="index.html#destinations">Destinations</a>
+      <a href="faq.html">FAQ</a>
+      <a href="journal.html">Journal</a>
+    </div>
+    <div class="footer-col">
+      <p class="h">Ressources</p>
+      <a href="sondage.html">Sondage de validation</a>
+      <a href="charte-fixers.html">Charte des fixers</a>
+      <a href="index.html#contact">Consultation gratuite</a>
+      <a href="/admin/">Administration</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 XPEDISYON par Zanmi Delis — Montréal, Québec</span>
+    <span>Réalisé avec Claude (Anthropic)</span>
+  </div>
+</footer>
+
+<a href="index.html#form" class="wa-float"><span class="dot"></span>Écrire sur WhatsApp</a>
+
+<script>
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => document.getElementById('nav-menu').classList.remove('open'));
+});
+const revealIO = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); revealIO.unobserve(e.target); } });
+}, {threshold:0.1});
+document.querySelectorAll('[data-reveal]').forEach(el => revealIO.observe(el));
+
+fetch('config.json').then(r => r.json()).then(d => {
+  if (d.charte_fixers) {
+    document.getElementById('cf-titre').textContent = d.charte_fixers.titre;
+    document.getElementById('cf-intro').textContent = d.charte_fixers.intro;
+    const grid = document.getElementById('charte-grid');
+    (d.charte_fixers.criteres || []).forEach((c, i) => {
+      grid.innerHTML += '<div class="charte-item"><span class="charte-num">0' + (i+1) + '</span><div><h4>' + c.titre + '</h4><p>' + c.description + '</p></div></div>';
+    });
+  }
+}).catch(err => console.warn('config.json non chargé :', err));
+</script>
+</body>
+</html>
