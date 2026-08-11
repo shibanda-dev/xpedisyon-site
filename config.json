@@ -1,0 +1,86 @@
+{
+  "site": {
+    "titre": "XPEDISYON",
+    "slogan": "Vwayaje tankou yon lokal",
+    "slogan_traduction": "Voyager comme un local",
+    "hero_titre": "Voyagez en Caraïbe comme un vrai local",
+    "hero_texte": "Agence de voyages expérientiels dédiée à la diaspora haïtienne et caribéenne de Montréal. Accès exclusif à un réseau de fixers locaux en République Dominicaine, en Floride et en Haïti."
+  },
+  "contact": {
+    "whatsapp": "15141234567",
+    "email": "info@xpedisyon.ca",
+    "telephone": "15141234567",
+    "ville": "Montréal, Québec, Canada"
+  },
+  "piliers": [
+    {
+      "titre": "L'accès que personne d'autre n'a",
+      "description": "Un réseau de fixers locaux en République Dominicaine, en Floride et en Haïti qui ouvrent des portes fermées aux touristes ordinaires."
+    },
+    {
+      "titre": "La confiance communautaire",
+      "description": "Un service en créole, en français et en espagnol, ancré dans la culture et la réalité de la diaspora haïtienne."
+    },
+    {
+      "titre": "La personnalisation par l'IA",
+      "description": "Chaque itinéraire est conçu sur mesure grâce à l'intelligence artificielle, pour un service digne d'une agence haut de gamme."
+    },
+    {
+      "titre": "La rigueur organisationnelle",
+      "description": "Des dossiers complets, un suivi avant, pendant et après le voyage, et une gestion proactive des imprévus."
+    },
+    {
+      "titre": "Le service en trois langues",
+      "description": "Français, créole haïtien et espagnol — pour un lien immédiat avec chaque client, où qu'il soit dans la Caraïbe."
+    }
+  ],
+  "segments": [
+    {
+      "nom": "Diaspora haïtienne de Montréal",
+      "description": "Retour aux racines, visites familiales, événements de vie — notre priorité absolue."
+    },
+    {
+      "nom": "Groupes communautaires et associatifs",
+      "description": "Églises, associations culturelles et comités — voyages de groupe organisés de A à Z."
+    },
+    {
+      "nom": "Diaspora caribéenne élargie",
+      "description": "Dominicains, Jamaïcains et autres communautés caribéennes de Montréal."
+    },
+    {
+      "nom": "Québécois amateurs d'authenticité",
+      "description": "Pour ceux qui veulent sortir des resorts tout inclus et vivre une Caraïbe véritable."
+    },
+    {
+      "nom": "Professionnels et semi-retraités",
+      "description": "Voyages immersifs et premium, service haut de gamme."
+    }
+  ],
+  "destinations": [
+    {
+      "nom": "Haïti",
+      "description": "Port-au-Prince, Cap-Haïtien, Jacmel — redécouvrez le pays autrement, avec un accompagnement local sécurisé.",
+      "image": "images/uploads/destination-haiti.jpg"
+    },
+    {
+      "nom": "République Dominicaine",
+      "description": "Santiago et Santo Domingo — hébergements authentiques et circuits culturels hors des sentiers battus.",
+      "image": "images/uploads/destination-rd.jpg"
+    },
+    {
+      "nom": "Floride",
+      "description": "Miami et Orlando — escales, transit et séjours familiaux organisés sans stress.",
+      "image": "images/uploads/destination-floride.jpg"
+    }
+  ],
+  "processus": [
+    { "titre": "Contact initial", "description": "Vous nous écrivez sur WhatsApp — réponse en moins de 2 heures." },
+    { "titre": "Consultation gratuite", "description": "30 minutes pour comprendre votre projet de voyage, en toute écoute." },
+    { "titre": "Proposition personnalisée", "description": "Un itinéraire complet et détaillé livré en moins de 24 heures." },
+    { "titre": "Confirmation et réservation", "description": "Contrat clair, dépôt sécurisé, réservation via notre agence affiliée." },
+    { "titre": "Accompagnement complet", "description": "Suivi avant, pendant et après votre voyage, jusqu'à votre retour." }
+  ],
+  "temoignages": [
+    { "nom": "Client fondateur", "texte": "Ajoutez ici votre premier témoignage client une fois recueilli." }
+  ]
+}

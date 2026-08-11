@@ -1,0 +1,73 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: simple
+
+locale: "fr"
+
+collections:
+  - name: "contenu"
+    label: "Contenu du site XPEDISYON"
+    files:
+      - name: "config"
+        label: "Textes, contact, piliers, destinations"
+        file: "config.json"
+        fields:
+          - label: "Site"
+            name: "site"
+            widget: "object"
+            fields:
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Slogan (créole)", name: "slogan", widget: "string" }
+              - { label: "Traduction du slogan", name: "slogan_traduction", widget: "string" }
+              - { label: "Titre principal (hero)", name: "hero_titre", widget: "string" }
+              - { label: "Texte principal (hero)", name: "hero_texte", widget: "text" }
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "WhatsApp (indicatif + numéro, ex. 15141234567)", name: "whatsapp", widget: "string" }
+              - { label: "Courriel", name: "email", widget: "string" }
+              - { label: "Téléphone", name: "telephone", widget: "string" }
+              - { label: "Ville", name: "ville", widget: "string" }
+
+          - label: "Piliers de différenciation"
+            name: "piliers"
+            widget: "list"
+            fields:
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Segments clients"
+            name: "segments"
+            widget: "list"
+            fields:
+              - { label: "Nom du segment", name: "nom", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Destinations"
+            name: "destinations"
+            widget: "list"
+            fields:
+              - { label: "Nom", name: "nom", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+
+          - label: "Étapes du processus"
+            name: "processus"
+            widget: "list"
+            fields:
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Témoignages"
+            name: "temoignages"
+            widget: "list"
+            fields:
+              - { label: "Nom du client", name: "nom", widget: "string" }
+              - { label: "Témoignage", name: "texte", widget: "text" }

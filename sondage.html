@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>XPEDISYON — Parlez-nous de votre voyage</title>
+<style>
+  :root{--orange:#E8632A;--navy:#1A2B5F;--gold:#C9A84C;--cream:#FBF7F1;--ink:#20242E;--muted:#6B7280;--radius:14px;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",Helvetica,Arial,sans-serif;background:var(--cream);color:var(--ink)}
+  .wrap{max-width:640px;margin:0 auto;padding:2.5rem 1.5rem}
+  .top{text-align:center;margin-bottom:1.5rem}
+  .top a{color:var(--navy);text-decoration:none;font-weight:600;font-size:.9rem}
+  h1{font-family:Georgia,serif;color:var(--navy);text-align:center;font-size:1.6rem;margin-bottom:.3rem}
+  .sub{text-align:center;color:var(--muted);margin-bottom:1.8rem}
+  .progress-outer{background:#e6e2d8;border-radius:999px;height:8px;overflow:hidden;margin-bottom:2rem}
+  .progress-inner{background:var(--orange);height:100%;width:8%;transition:width .3s}
+  .card{background:#fff;border-radius:var(--radius);padding:1.8rem;box-shadow:0 10px 30px rgba(26,43,95,.10)}
+  .q{display:none}
+  .q.active{display:block}
+  .q h2{font-size:1.1rem;color:var(--navy);margin-bottom:1rem}
+  .opts{display:grid;gap:.7rem}
+  .opt{border:2px solid #e5e0d5;border-radius:10px;padding:.9rem 1.1rem;cursor:pointer;font-size:.95rem;transition:.15s}
+  .opt:hover{border-color:var(--gold)}
+  .opt.sel{border-color:var(--orange);background:#fdf1eb;font-weight:600}
+  input[type=text],input[type=email],input[type=tel]{width:100%;padding:.8rem;border:1px solid #ddd;border-radius:8px;font-size:.95rem;font-family:inherit}
+  .nav-btns{display:flex;justify-content:space-between;margin-top:1.6rem}
+  button{border:none;border-radius:999px;padding:.75rem 1.5rem;font-weight:700;cursor:pointer;font-size:.95rem}
+  .btn-primary{background:var(--orange);color:#fff}
+  .btn-primary:disabled{background:#e0c9bd;cursor:not-allowed}
+  .btn-secondary{background:transparent;color:var(--navy)}
+  .thanks{text-align:center;display:none}
+  .thanks h2{color:var(--navy);font-family:Georgia,serif}
+  .thanks p{color:var(--muted)}
+  label{font-weight:600;font-size:.9rem;display:block;margin-bottom:.3rem}
+  .field{margin-bottom:1rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="/">&larr; Retour au site XPEDISYON</a></div>
+  <h1>Parlez-nous de votre voyage</h1>
+  <p class="sub">5 questions rapides — nous vous recontactons sous 48h</p>
+  <div class="progress-outer"><div class="progress-inner" id="pbar"></div></div>
+
+  <div class="card">
+    <form name="sondage-xpedisyon" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="surveyForm">
+      <input type="hidden" name="form-name" value="sondage-xpedisyon" />
+      <input type="hidden" name="segment_identifie" id="f-segment" />
+      <input type="hidden" name="score_global" id="f-score" />
+      <p style="display:none"><label>Ne pas remplir : <input name="bot-field" /></label></p>
+
+      <div class="q active" data-step="1">
+        <h2>1. Quelle est l'occasion de ce voyage ?</h2>
+        <div class="opts" data-field="occasion">
+          <div class="opt" data-value="Visite familiale">Visite familiale / retour aux racines</div>
+          <div class="opt" data-value="Groupe / association">Voyage de groupe (église, association)</div>
+          <div class="opt" data-value="Vacances / découverte">Vacances / découverte personnelle</div>
+          <div class="opt" data-value="Événement spécial">Événement spécial (mariage, anniversaire)</div>
+        </div>
+        <input type="hidden" name="occasion" id="in-occasion" />
+      </div>
+
+      <div class="q" data-step="2">
+        <h2>2. Combien de personnes voyageront ?</h2>
+        <div class="opts" data-field="taille_groupe">
+          <div class="opt" data-value="1-2 personnes">1 à 2 personnes</div>
+          <div class="opt" data-value="3-5 personnes">3 à 5 personnes (famille)</div>
+          <div class="opt" data-value="6-15 personnes">6 à 15 personnes</div>
+          <div class="opt" data-value="16+ personnes">16 personnes ou plus (groupe)</div>
+        </div>
+        <input type="hidden" name="taille_groupe" id="in-taille_groupe" />
+      </div>
+
+      <div class="q" data-step="3">
+        <h2>3. Quelle destination vous intéresse ?</h2>
+        <div class="opts" data-field="destination">
+          <div class="opt" data-value="Haïti">Haïti</div>
+          <div class="opt" data-value="République Dominicaine">République Dominicaine</div>
+          <div class="opt" data-value="Floride">Floride</div>
+          <div class="opt" data-value="Pas encore décidé">Pas encore décidé</div>
+        </div>
+        <input type="hidden" name="destination" id="in-destination" />
+      </div>
+
+      <div class="q" data-step="4">
+        <h2>4. Quel est votre budget approximatif par personne ?</h2>
+        <div class="opts" data-field="budget">
+          <div class="opt" data-value="Moins de 1500$">Moins de 1 500 $</div>
+          <div class="opt" data-value="1500-3000$">1 500 $ à 3 000 $</div>
+          <div class="opt" data-value="3000-5000$">3 000 $ à 5 000 $</div>
+          <div class="opt" data-value="5000$+">5 000 $ et plus</div>
+        </div>
+        <input type="hidden" name="budget" id="in-budget" />
+      </div>
+
+      <div class="q" data-step="5">
+        <h2>5. Vos coordonnées</h2>
+        <div class="field"><label for="prenom">Prénom</label><input type="text" id="prenom" name="prenom" required /></div>
+        <div class="field"><label for="courriel">Courriel</label><input type="email" id="courriel" name="courriel" required /></div>
+        <div class="field"><label for="telephone">Téléphone (optionnel)</label><input type="tel" id="telephone" name="telephone" /></div>
+      </div>
+
+      <div class="nav-btns">
+        <button type="button" class="btn-secondary" id="btnBack" style="visibility:hidden">Précédent</button>
+        <button type="button" class="btn-primary" id="btnNext" disabled>Suivant</button>
+      </div>
+    </form>
+
+    <div class="thanks" id="thanks">
+      <h2>Merci !</h2>
+      <p>Votre demande a bien été reçue. Un conseiller XPEDISYON vous recontactera sous 48 heures.</p>
+      <a href="/" class="btn-primary" style="display:inline-block;text-decoration:none;padding:.75rem 1.6rem;border-radius:999px;margin-top:.5rem">Retour au site</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  const total = 5;
+  let step = 1;
+  const answers = {};
+
+  document.querySelectorAll('.opts').forEach(group => {
+    const field = group.dataset.field;
+    group.querySelectorAll('.opt').forEach(opt => {
+      opt.addEventListener('click', () => {
+        group.querySelectorAll('.opt').forEach(o => o.classList.remove('sel'));
+        opt.classList.add('sel');
+        answers[field] = opt.dataset.value;
+        document.getElementById('in-' + field).value = opt.dataset.value;
+        document.getElementById('btnNext').disabled = false;
+      });
+    });
+  });
+
+  const prenomEl = document.getElementById('prenom');
+  const courrielEl = document.getElementById('courriel');
+  function checkStep5(){
+    document.getElementById('btnNext').disabled = !(prenomEl.value && courrielEl.value);
+  }
+  prenomEl.addEventListener('input', checkStep5);
+  courrielEl.addEventListener('input', checkStep5);
+
+  function updateProgress(){
+    document.getElementById('pbar').style.width = Math.round((step/total)*100) + '%';
+  }
+
+  function showStep(n){
+    document.querySelectorAll('.q').forEach(q => q.classList.remove('active'));
+    document.querySelector(`.q[data-step="${n}"]`).classList.add('active');
+    document.getElementById('btnBack').style.visibility = n === 1 ? 'hidden' : 'visible';
+    document.getElementById('btnNext').textContent = n === total ? 'Envoyer' : 'Suivant';
+    // re-evaluate next button state
+    if (n === total) checkStep5();
+    else document.getElementById('btnNext').disabled = !answers[document.querySelector(`.q[data-step="${n}"] .opts`)?.dataset.field];
+    updateProgress();
+  }
+
+  function computeScoreAndSegment(){
+    let score = 0;
+    if (answers.occasion === 'Groupe / association') score += 3;
+    if (answers.taille_groupe === '16+ personnes') score += 3;
+    if (answers.taille_groupe === '6-15 personnes') score += 2;
+    if (answers.budget === '5000$+') score += 3;
+    if (answers.budget === '3000-5000$') score += 2;
+    document.getElementById('f-score').value = score;
+
+    let segment = 'Diaspora haïtienne';
+    if (answers.occasion === 'Groupe / association') segment = 'Groupe communautaire';
+    else if (answers.taille_groupe === '16+ personnes') segment = 'Groupe communautaire';
+    else if (answers.budget === '5000$+') segment = 'Professionnel / premium';
+    document.getElementById('f-segment').value = segment;
+  }
+
+  document.getElementById('btnNext').addEventListener('click', () => {
+    if (step < total) {
+      step++;
+      showStep(step);
+    } else {
+      computeScoreAndSegment();
+      const form = document.getElementById('surveyForm');
+      const data = new FormData(form);
+      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(data).toString() })
+        .then(() => {
+          document.querySelector('.card form').style.display = 'none';
+          document.getElementById('thanks').style.display = 'block';
+          document.getElementById('pbar').style.width = '100%';
+        })
+        .catch(() => alert("Une erreur est survenue. Veuillez réessayer ou nous écrire directement sur WhatsApp."));
+    }
+  });
+
+  document.getElementById('btnBack').addEventListener('click', () => {
+    if (step > 1) { step--; showStep(step); }
+  });
+
+  showStep(step);
+</script>
+</body>
+</html>

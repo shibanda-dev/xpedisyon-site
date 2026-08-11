@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>XPEDISYON — Voyages expérientiels caribéens</title>
+<meta name="description" content="Agence de voyages expérientiels pour la diaspora haïtienne et caribéenne de Montréal. Vwayaje tankou yon lokal." />
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<style>
+  :root{
+    --orange:#E8632A;
+    --navy:#1A2B5F;
+    --gold:#C9A84C;
+    --cream:#FBF7F1;
+    --ink:#20242E;
+    --muted:#6B7280;
+    --radius:14px;
+    --shadow:0 10px 30px rgba(26,43,95,.10);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+  h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--navy);margin:0 0 .5rem}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 1.5rem}
+
+  header{position:sticky;top:0;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.05);z-index:50}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:.9rem 1.5rem;max-width:1080px;margin:0 auto}
+  .logo{font-family:Georgia,serif;font-weight:700;font-size:1.4rem;color:var(--navy);letter-spacing:.5px}
+  .logo span{color:var(--orange)}
+  .navlinks{display:flex;gap:1.6rem;font-size:.95rem;font-weight:600}
+  .navlinks a{text-decoration:none;color:var(--navy)}
+  .btn{display:inline-block;background:var(--orange);color:#fff;padding:.7rem 1.5rem;border-radius:999px;font-weight:700;text-decoration:none;box-shadow:var(--shadow);transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-outline{background:transparent;border:2px solid var(--orange);color:var(--orange)}
+
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,#0f1a3d 100%);color:#fff;padding:5rem 0 6rem;text-align:center}
+  .hero h1{color:#fff;font-size:2.4rem;max-width:760px;margin:0 auto .9rem}
+  .hero p{max-width:600px;margin:0 auto 2rem;color:#dfe3f0;font-size:1.05rem}
+  .slogan{display:inline-block;background:rgba(201,168,76,.15);border:1px solid var(--gold);color:var(--gold);padding:.4rem 1.1rem;border-radius:999px;font-weight:700;margin-bottom:1.6rem;font-size:.9rem;letter-spacing:.3px}
+
+  section{padding:4rem 0}
+  .section-title{text-align:center;max-width:640px;margin:0 auto 2.5rem}
+  .section-title h2{font-size:1.8rem}
+  .section-title p{color:var(--muted)}
+
+  .grid{display:grid;gap:1.5rem}
+  .grid-5{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .grid-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+
+  .card{background:#fff;border-radius:var(--radius);padding:1.6rem;box-shadow:var(--shadow);border-top:4px solid var(--orange)}
+  .card h3{font-size:1.1rem;margin-bottom:.5rem}
+  .card p{color:var(--muted);font-size:.93rem;margin:0}
+
+  .segments .card{border-top-color:var(--navy)}
+  .destinations .card{border-top-color:var(--gold);overflow:hidden;padding:0}
+  .destinations .card img{width:100%;height:170px;object-fit:cover;display:block;background:#e5e5e5}
+  .destinations .card .inner{padding:1.4rem}
+
+  .process{background:#fff}
+  .steps{counter-reset:step;display:grid;gap:1.4rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+  .step{position:relative;padding-top:2.4rem}
+  .step::before{counter-increment:step;content:counter(step);position:absolute;top:0;left:0;width:2.2rem;height:2.2rem;border-radius:50%;background:var(--orange);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+  .step h3{font-size:1rem}
+  .step p{color:var(--muted);font-size:.9rem}
+
+  .testimonials{background:var(--navy);color:#fff}
+  .testimonials .section-title h2, .testimonials .section-title p{color:#fff}
+  .t-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:var(--radius);padding:1.6rem}
+  .t-card p.quote{font-style:italic;margin-bottom:.8rem}
+  .t-card p.name{color:var(--gold);font-weight:700;margin:0}
+
+  .cta-band{background:var(--orange);color:#fff;text-align:center;padding:3rem 0}
+  .cta-band h2{color:#fff}
+  .cta-band .btn{background:#fff;color:var(--orange)}
+
+  form.contact-form{display:grid;gap:1rem;max-width:560px;margin:0 auto;background:#fff;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow)}
+  form.contact-form input, form.contact-form textarea{padding:.8rem;border:1px solid #ddd;border-radius:8px;font-family:inherit;font-size:.95rem}
+  form.contact-form label{font-weight:600;font-size:.9rem;margin-bottom:.2rem;display:block}
+
+  footer{background:#0f1a3d;color:#c9cee0;padding:2.5rem 0;text-align:center;font-size:.88rem}
+  footer a{color:var(--gold);text-decoration:none}
+
+  @media(max-width:640px){
+    .navlinks{display:none}
+    .hero h1{font-size:1.8rem}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">XPEDIS<span>Y</span>ON</div>
+    <div class="navlinks">
+      <a href="#piliers">Pourquoi nous</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#processus">Comment ça marche</a>
+      <a href="/sondage">Sondage</a>
+    </div>
+    <a href="#contact" class="btn">Consultation gratuite</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="slogan" id="slogan-full">Vwayaje tankou yon lokal</div>
+    <h1 id="hero-titre">Voyagez en Caraïbe comme un vrai local</h1>
+    <p id="hero-texte">Agence de voyages expérientiels dédiée à la diaspora haïtienne et caribéenne de Montréal.</p>
+    <a href="#contact" class="btn">Réserver ma consultation gratuite</a>
+  </div>
+</section>
+
+<section id="piliers">
+  <div class="wrap">
+    <div class="section-title">
+      <h2>Pourquoi voyager avec XPEDISYON</h2>
+      <p>Cinq piliers qui font toute la différence</p>
+    </div>
+    <div class="grid grid-5" id="piliers-list"></div>
+  </div>
+</section>
+
+<section class="segments" style="background:#fff">
+  <div class="wrap">
+    <div class="section-title">
+      <h2>Nous voyageons avec vous</h2>
+      <p>Que vous soyez de la diaspora, en groupe, ou en quête d'authenticité</p>
+    </div>
+    <div class="grid grid-3" id="segments-list"></div>
+  </div>
+</section>
+
+<section id="destinations" class="destinations">
+  <div class="wrap">
+    <div class="section-title">
+      <h2>Destinations phares</h2>
+      <p>Haïti, République Dominicaine, Floride — et bien plus à venir</p>
+    </div>
+    <div class="grid grid-3" id="destinations-list"></div>
+  </div>
+</section>
+
+<section id="processus" class="process">
+  <div class="wrap">
+    <div class="section-title">
+      <h2>Comment ça marche</h2>
+      <p>De la première conversation à votre retour de voyage</p>
+    </div>
+    <div class="steps" id="processus-list"></div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="wrap">
+    <div class="section-title">
+      <h2>Ce que disent nos voyageurs</h2>
+      <p></p>
+    </div>
+    <div class="grid grid-3" id="temoignages-list"></div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="wrap">
+    <h2>Prêt à voyager comme un local ?</h2>
+    <p style="margin-bottom:1.5rem">Écrivez-nous sur WhatsApp ou remplissez le formulaire — réponse en moins de 2 heures.</p>
+    <a id="whatsapp-link" href="#" target="_blank" class="btn">Écrire sur WhatsApp</a>
+  </div>
+</div>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-title">
+      <h2>Consultation gratuite</h2>
+      <p>Dites-nous en quelques mots votre projet de voyage</p>
+    </div>
+    <form name="contact-xpedisyon" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+      <input type="hidden" name="form-name" value="contact-xpedisyon" />
+      <p class="hidden" style="display:none">
+        <label>Ne pas remplir : <input name="bot-field" /></label>
+      </p>
+      <div>
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" name="nom" required />
+      </div>
+      <div>
+        <label for="courriel">Courriel</label>
+        <input type="email" id="courriel" name="courriel" required />
+      </div>
+      <div>
+        <label for="telephone">Téléphone</label>
+        <input type="tel" id="telephone" name="telephone" />
+      </div>
+      <div>
+        <label for="message">Votre projet de voyage</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn">Envoyer ma demande</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p id="footer-contact">XPEDISYON — Montréal, Québec, Canada</p>
+    <p>Vwayaje tankou yon lokal · <a href="/sondage">Sondage</a> · <a href="/admin/">Administration</a></p>
+  </div>
+</footer>
+
+<script>
+  // Redirection standard Netlify Identity vers le panneau d'administration après confirmation
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+
+  fetch("config.json")
+    .then(r => r.json())
+    .then(d => {
+      if (d.site) {
+        document.getElementById("slogan-full").textContent = d.site.slogan + " — " + d.site.slogan_traduction;
+        document.getElementById("hero-titre").textContent = d.site.hero_titre;
+        document.getElementById("hero-texte").textContent = d.site.hero_texte;
+      }
+      if (d.contact) {
+        const wa = d.contact.whatsapp || "";
+        document.getElementById("whatsapp-link").href = "https://wa.me/" + wa;
+        document.getElementById("footer-contact").textContent =
+          "XPEDISYON — " + (d.contact.ville || "") +
+          " · " + (d.contact.telephone || "") +
+          " · " + (d.contact.email || "");
+      }
+      const piliers = document.getElementById("piliers-list");
+      (d.piliers || []).forEach(p => {
+        piliers.innerHTML += `<div class="card"><h3>${p.titre}</h3><p>${p.description}</p></div>`;
+      });
+      const segments = document.getElementById("segments-list");
+      (d.segments || []).forEach(s => {
+        segments.innerHTML += `<div class="card"><h3>${s.nom}</h3><p>${s.description}</p></div>`;
+      });
+      const dest = document.getElementById("destinations-list");
+      (d.destinations || []).forEach(x => {
+        dest.innerHTML += `<div class="card"><img src="${x.image || ''}" alt="${x.nom}" onerror="this.style.display='none'"/><div class="inner"><h3>${x.nom}</h3><p>${x.description}</p></div></div>`;
+      });
+      const proc = document.getElementById("processus-list");
+      (d.processus || []).forEach(p => {
+        proc.innerHTML += `<div class="step"><h3>${p.titre}</h3><p>${p.description}</p></div>`;
+      });
+      const temo = document.getElementById("temoignages-list");
+      (d.temoignages || []).forEach(t => {
+        temo.innerHTML += `<div class="t-card"><p class="quote">"${t.texte}"</p><p class="name">— ${t.nom}</p></div>`;
+      });
+    })
+    .catch(err => console.warn("config.json non chargé :", err));
+</script>
+
+</body>
+</html>
