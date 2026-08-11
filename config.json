@@ -1,104 +1,47 @@
 {
-  "site": {
-    "titre": "XPEDISYON",
-    "slogan": "Vwayaje lokal",
-    "slogan_traduction": "Voyager local",
-    "hero_titre": "Voyagez en Caraïbe comme un vrai local",
-    "hero_texte": "Agence de voyages expérientiels dédiée à la diaspora haïtienne et caribéenne de Montréal. Accès exclusif à un réseau de fixers locaux en République Dominicaine, en Floride et en Haïti."
+  "hero": {
+    "eyebrow": "Agence de voyages expérientiels caribéens",
+    "titre_ligne1": "Vwayaje tankou",
+    "titre_ligne2": "yon lokal",
+    "texte": "L'agence de la diaspora haïtienne de Montréal. Haïti, République Dominicaine, Floride — avec quelqu'un qui parle votre langue, connaît les gens sur place, et s'occupe de tout.",
+    "slogan_pill": "\"Voyager comme un local — organisé comme un pro\""
   },
-  "contact": {
-    "whatsapp": "15141234567",
-    "email": "info@xpedisyon.ca",
-    "telephone": "15141234567",
-    "ville": "Montréal, Québec, Canada"
-  },
-  "piliers": [
-    {
-      "titre": "L'accès que personne d'autre n'a",
-      "description": "Un réseau de fixers locaux en République Dominicaine, en Floride et en Haïti qui ouvrent des portes fermées aux touristes ordinaires."
-    },
-    {
-      "titre": "La confiance communautaire",
-      "description": "Un service en créole, en français et en espagnol, ancré dans la culture et la réalité de la diaspora haïtienne."
-    },
-    {
-      "titre": "La personnalisation par l'IA",
-      "description": "Chaque itinéraire est conçu sur mesure grâce à l'intelligence artificielle, pour un service digne d'une agence haut de gamme."
-    },
-    {
-      "titre": "La rigueur organisationnelle",
-      "description": "Des dossiers complets, un suivi avant, pendant et après le voyage, et une gestion proactive des imprévus."
-    },
-    {
-      "titre": "Le service en trois langues",
-      "description": "Français, créole haïtien et espagnol — pour un lien immédiat avec chaque client, où qu'il soit dans la Caraïbe."
-    }
+  "stats": [
+    { "nombre": "120K+", "libelle": "Haïtiens dans le Grand Montréal" },
+    { "nombre": "24h", "libelle": "Pour recevoir votre proposition personnalisée" },
+    { "nombre": "3", "libelle": "Destinations phares : Haïti · RD · Floride" },
+    { "nombre": "0$", "libelle": "Pour la consultation initiale" }
   ],
-  "segments": [
-    {
-      "nom": "Diaspora haïtienne de Montréal",
-      "description": "Retour aux racines, visites familiales, événements de vie — notre priorité absolue."
-    },
-    {
-      "nom": "Groupes communautaires et associatifs",
-      "description": "Églises, associations culturelles et comités — voyages de groupe organisés de A à Z."
-    },
-    {
-      "nom": "Diaspora caribéenne élargie",
-      "description": "Dominicains, Jamaïcains et autres communautés caribéennes de Montréal."
-    },
-    {
-      "nom": "Québécois amateurs d'authenticité",
-      "description": "Pour ceux qui veulent sortir des resorts tout inclus et vivre une Caraïbe véritable."
-    },
-    {
-      "nom": "Professionnels et semi-retraités",
-      "description": "Voyages immersifs et premium, service haut de gamme."
-    }
+  "piliers": [
+    { "icone": "🗣", "titre": "Service en créole et en français", "description": "Nous parlons votre langue — pas seulement pour communiquer, mais pour comprendre ce que ce voyage signifie vraiment pour vous et votre famille." },
+    { "icone": "🤝", "titre": "Partenaires locaux sur place", "description": "Des fixers de confiance en République Dominicaine, en Floride et en Haïti. Ils ouvrent des portes que Booking et Expedia ne connaissent même pas." },
+    { "icone": "📋", "titre": "Proposition personnalisée en 24h", "description": "Après une consultation de 30 minutes, vous recevez un document complet : itinéraire jour par jour, hébergements, prix détaillé — fait pour vous, pas pour une famille générique." },
+    { "icone": "👨‍👩‍👧‍👦", "titre": "Spécialiste famille et groupe", "description": "Famille nombreuse, Mamie qui vient aussi, groupe de l'église, voyage de célébration — nous gérons la logistique complexe que les plateformes en ligne ne savent pas gérer." },
+    { "icone": "🛡", "titre": "Accompagnement sécurité", "description": "Pour Haïti et toute destination sensible, nos partenaires locaux nous transmettent l'information en temps réel. Vous voyagez informé, pas dans l'incertitude." },
+    { "icone": "📱", "titre": "Disponible 7j/7 sur WhatsApp", "description": "Avant, pendant et après le voyage. Si quelque chose se passe sur place, vous n'êtes pas seul. Quelqu'un répond — en moins de 2 heures, toujours." }
   ],
   "destinations": [
-    {
-      "nom": "Haïti",
-      "description": "Port-au-Prince, Cap-Haïtien, Jacmel — redécouvrez le pays autrement, avec un accompagnement local sécurisé.",
-      "image": "images/uploads/destination-haiti.jpg"
-    },
-    {
-      "nom": "République Dominicaine",
-      "description": "Santiago et Santo Domingo — hébergements authentiques et circuits culturels hors des sentiers battus.",
-      "image": "images/uploads/destination-rd.jpg"
-    },
-    {
-      "nom": "Floride",
-      "description": "Miami et Orlando — escales, transit et séjours familiaux organisés sans stress.",
-      "image": "images/uploads/destination-floride.jpg"
-    }
+    { "tag": "Priorité #1", "nom": "République Dominicaine", "sous_titre": "Punta Cana · Santiago · Santo Domingo", "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80&fit=crop" },
+    { "tag": "Retour aux racines", "nom": "Haïti", "sous_titre": "Port-au-Prince · Cap-Haïtien · Jacmel", "image": "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=800&q=80&fit=crop" },
+    { "tag": "Diaspora & famille", "nom": "Floride & Caraïbes", "sous_titre": "Miami · Orlando · Jamaïque · Barbade", "image": "https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?w=800&q=80&fit=crop" }
   ],
-  "processus": [
-    {
-      "titre": "Contact initial",
-      "description": "Vous nous écrivez sur WhatsApp — réponse en moins de 2 heures."
-    },
-    {
-      "titre": "Consultation gratuite",
-      "description": "30 minutes pour comprendre votre projet de voyage, en toute écoute."
-    },
-    {
-      "titre": "Proposition personnalisée",
-      "description": "Un itinéraire complet et détaillé livré en moins de 24 heures."
-    },
-    {
-      "titre": "Confirmation et réservation",
-      "description": "Contrat clair, dépôt sécurisé, réservation via notre agence affiliée."
-    },
-    {
-      "titre": "Accompagnement complet",
-      "description": "Suivi avant, pendant et après votre voyage, jusqu'à votre retour."
-    }
+  "etapes": [
+    { "titre": "Contactez-nous", "description": "WhatsApp, Facebook ou formulaire ci-dessous. Réponse en moins de 2h, 7j/7." },
+    { "titre": "Consultation gratuite", "description": "30 minutes par téléphone ou vidéo. On parle de votre famille, vos envies, votre budget." },
+    { "titre": "Proposition en 24h", "description": "Document complet : itinéraire jour par jour, hôtels, activités, prix détaillé." },
+    { "titre": "Confirmation", "description": "Vous approuvez. Nous réservons tout. Paiement direct via notre agence partenaire certifiée OPC." },
+    { "titre": "Voyage & retour", "description": "Disponibles avant, pendant et après. Nos fixers sur place. Vous rentrez avec des souvenirs, pas du stress." }
   ],
   "temoignages": [
-    {
-      "nom": "Client fondateur",
-      "texte": "Ajoutez ici votre premier témoignage client une fois recueilli."
-    }
-  ]
+    { "initiales": "JE", "texte": "Mwen pa t janm panse m t ap ka rele manman m nan Santiago pou li di l ke nou sou wout pou ede l. XPEDISYON pa t juste yon agent — se yon zanmi ki konprann sa sa vle di vwayaje lwen fanmi w.", "nom": "Jean-Pierre E.", "contexte": "Famille 5 personnes · RD 2025" },
+    { "initiales": "CP", "texte": "Apre 5 ans san ale Ayiti, mwen te pè. Yo te organize tout bagay pou mwen — depi avyon an jouk lakay manman m. Mwen te santi m an sekirite tout tan.", "nom": "Claudette P.", "contexte": "Couple · Haïti 2025" },
+    { "initiales": "EB", "texte": "Notre groupe de 18 personnes n'avait jamais voyagé ensemble. XPEDISYON a géré chaque détail sans un seul problème. Le pasteur Desrosiers recommande sans hésitation.", "nom": "Comité voyage", "contexte": "Église Bethel · Punta Cana 2025" }
+  ],
+  "contact": {
+    "whatsapp": "15141234567",
+    "whatsapp_affiche": "514-XXX-XXXX",
+    "email": "bonjour@xpedisyon.ca",
+    "ville": "Montréal, Québec, Canada",
+    "disponibilite": "7 jours sur 7 · Réponse < 2h"
+  }
 }
