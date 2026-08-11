@@ -1,7 +1,7 @@
 {
   "site": {
     "titre": "XPEDISYON",
-    "slogan": "Vwayaje tankou yon lokal",
+    "slogan": "Vwayaje lokal",
     "slogan_traduction": "Voyager comme un local",
     "hero_titre": "Voyagez en Caraïbe comme un vrai local",
     "hero_texte": "Agence de voyages expérientiels dédiée à la diaspora haïtienne et caribéenne de Montréal. Accès exclusif à un réseau de fixers locaux en République Dominicaine, en Floride et en Haïti."
@@ -74,13 +74,31 @@
     }
   ],
   "processus": [
-    { "titre": "Contact initial", "description": "Vous nous écrivez sur WhatsApp — réponse en moins de 2 heures." },
-    { "titre": "Consultation gratuite", "description": "30 minutes pour comprendre votre projet de voyage, en toute écoute." },
-    { "titre": "Proposition personnalisée", "description": "Un itinéraire complet et détaillé livré en moins de 24 heures." },
-    { "titre": "Confirmation et réservation", "description": "Contrat clair, dépôt sécurisé, réservation via notre agence affiliée." },
-    { "titre": "Accompagnement complet", "description": "Suivi avant, pendant et après votre voyage, jusqu'à votre retour." }
+    {
+      "titre": "Contact initial",
+      "description": "Vous nous écrivez sur WhatsApp — réponse en moins de 2 heures."
+    },
+    {
+      "titre": "Consultation gratuite",
+      "description": "30 minutes pour comprendre votre projet de voyage, en toute écoute."
+    },
+    {
+      "titre": "Proposition personnalisée",
+      "description": "Un itinéraire complet et détaillé livré en moins de 24 heures."
+    },
+    {
+      "titre": "Confirmation et réservation",
+      "description": "Contrat clair, dépôt sécurisé, réservation via notre agence affiliée."
+    },
+    {
+      "titre": "Accompagnement complet",
+      "description": "Suivi avant, pendant et après votre voyage, jusqu'à votre retour."
+    }
   ],
   "temoignages": [
-    { "nom": "Client fondateur", "texte": "Ajoutez ici votre premier témoignage client une fois recueilli." }
+    {
+      "nom": "Client fondateur",
+      "texte": "Ajoutez ici votre premier témoignage client une fois recueilli."
+    }
   ]
 }
