@@ -461,7 +461,7 @@ fetch('config.json').then(r => r.json()).then(d => {
 
   const mq = document.getElementById('marquee');
   const items = d.marquee || [];
-  const buildSet = () => items.map(v => '<span>' + v + '</span><span class="dot">◆</span>').join('');
+  const buildSet = () => items.map(v => '<span>' + (v.ville || v) + '</span><span class="dot">◆</span>').join('');
   mq.innerHTML = '<div class="marquee-set">' + buildSet() + '</div><div class="marquee-set">' + buildSet() + '</div>';
 
   const stats = document.getElementById('stats-grid');

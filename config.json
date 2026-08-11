@@ -10,37 +10,152 @@
     "carte_flottante_chiffre": "24 heures",
     "carte_flottante_texte": "Itinéraire jour par jour, hébergements, prix détaillé."
   },
-  "marquee": ["Punta Cana", "Cap-Haïtien", "Santo Domingo", "Jacmel", "Miami", "Santiago", "Orlando", "Port-au-Prince", "Jamaïque", "Barbade"],
+  "marquee": [
+    {
+      "ville": "Punta Cana"
+    },
+    {
+      "ville": "Cap-Haïtien"
+    },
+    {
+      "ville": "Santo Domingo"
+    },
+    {
+      "ville": "Jacmel"
+    },
+    {
+      "ville": "Miami"
+    },
+    {
+      "ville": "Santiago"
+    },
+    {
+      "ville": "Orlando"
+    },
+    {
+      "ville": "Port-au-Prince"
+    },
+    {
+      "ville": "Jamaïque"
+    },
+    {
+      "ville": "Barbade"
+    }
+  ],
   "stats": [
-    { "chiffre": "120K+", "libelle": "Haïtiens dans le Grand Montréal" },
-    { "chiffre": "24h", "libelle": "Pour recevoir votre proposition personnalisée" },
-    { "chiffre": "3", "libelle": "Destinations phares : Haïti · RD · Floride" },
-    { "chiffre": "0 $", "libelle": "Pour la consultation initiale" }
+    {
+      "chiffre": "120K+",
+      "libelle": "Haïtiens dans le Grand Montréal"
+    },
+    {
+      "chiffre": "24h",
+      "libelle": "Pour recevoir votre proposition personnalisée"
+    },
+    {
+      "chiffre": "3",
+      "libelle": "Destinations phares : Haïti · RD · Floride"
+    },
+    {
+      "chiffre": "0 $",
+      "libelle": "Pour la consultation initiale"
+    }
   ],
   "piliers": [
-    { "titre": "Service en créole et en français", "description": "Nous parlons votre langue — pas seulement pour communiquer, mais pour comprendre ce que ce voyage signifie vraiment pour vous et votre famille." },
-    { "titre": "Partenaires locaux sur place", "description": "Des fixers de confiance en République Dominicaine, en Floride et en Haïti. Ils ouvrent des portes que les plateformes en ligne ne connaissent même pas." },
-    { "titre": "Proposition personnalisée en 24h", "description": "Après une consultation de 30 minutes, vous recevez un document complet : itinéraire jour par jour, hébergements, prix détaillé — fait pour vous, pas pour une famille générique." },
-    { "titre": "Spécialiste famille et groupe", "description": "Famille nombreuse, Mamie qui vient aussi, groupe de l'église, voyage de célébration — nous gérons la logistique complexe que les plateformes ne savent pas gérer." },
-    { "titre": "Accompagnement sécurité", "description": "Pour Haïti et toute destination sensible, nos partenaires locaux nous transmettent l'information en temps réel. Vous voyagez informé, pas dans l'incertitude." },
-    { "titre": "Disponible 7j/7 sur WhatsApp", "description": "Avant, pendant et après le voyage. Si quelque chose se passe sur place, vous n'êtes pas seul. Quelqu'un répond — en moins de 2 heures, toujours." }
+    {
+      "titre": "Service en créole et en français",
+      "description": "Nous parlons votre langue — pas seulement pour communiquer, mais pour comprendre ce que ce voyage signifie vraiment pour vous et votre famille."
+    },
+    {
+      "titre": "Partenaires locaux sur place",
+      "description": "Des fixers de confiance en République Dominicaine, en Floride et en Haïti. Ils ouvrent des portes que les plateformes en ligne ne connaissent même pas."
+    },
+    {
+      "titre": "Proposition personnalisée en 24h",
+      "description": "Après une consultation de 30 minutes, vous recevez un document complet : itinéraire jour par jour, hébergements, prix détaillé — fait pour vous, pas pour une famille générique."
+    },
+    {
+      "titre": "Spécialiste famille et groupe",
+      "description": "Famille nombreuse, Mamie qui vient aussi, groupe de l'église, voyage de célébration — nous gérons la logistique complexe que les plateformes ne savent pas gérer."
+    },
+    {
+      "titre": "Accompagnement sécurité",
+      "description": "Pour Haïti et toute destination sensible, nos partenaires locaux nous transmettent l'information en temps réel. Vous voyagez informé, pas dans l'incertitude."
+    },
+    {
+      "titre": "Disponible 7j/7 sur WhatsApp",
+      "description": "Avant, pendant et après le voyage. Si quelque chose se passe sur place, vous n'êtes pas seul. Quelqu'un répond — en moins de 2 heures, toujours."
+    }
   ],
   "destinations": [
-    { "tag": "Priorité #1", "nom": "République Dominicaine", "sous_titre": "Punta Cana · Santiago · Santo Domingo", "detail": "Le voyage le plus demandé par nos familles — plages, culture et proximité d'Haïti.", "image": "" },
-    { "tag": "Retour aux racines", "nom": "Haïti", "sous_titre": "Port-au-Prince · Cap-Haïtien · Jacmel", "detail": "Un accompagnement sécurité et logistique pensé pour un retour serein.", "image": "" },
-    { "tag": "Diaspora & famille", "nom": "Floride & Caraïbes", "sous_titre": "Miami · Orlando · Jamaïque · Barbade", "detail": "Parcs, cousins à Miami, croisières de groupe — la logistique familiale gérée de bout en bout.", "image": "" }
+    {
+      "tag": "Priorité #1",
+      "nom": "République Dominicaine",
+      "sous_titre": "Punta Cana · Santiago · Santo Domingo",
+      "detail": "Le voyage le plus demandé par nos familles — plages, culture et proximité d'Haïti.",
+      "image": ""
+    },
+    {
+      "tag": "Retour aux racines",
+      "nom": "Haïti",
+      "sous_titre": "Port-au-Prince · Cap-Haïtien · Jacmel",
+      "detail": "Un accompagnement sécurité et logistique pensé pour un retour serein.",
+      "image": ""
+    },
+    {
+      "tag": "Diaspora & famille",
+      "nom": "Floride & Caraïbes",
+      "sous_titre": "Miami · Orlando · Jamaïque · Barbade",
+      "detail": "Parcs, cousins à Miami, croisières de groupe — la logistique familiale gérée de bout en bout.",
+      "image": ""
+    }
   ],
   "etapes": [
-    { "titre": "Contactez-nous", "description": "WhatsApp, Facebook ou formulaire. Réponse en moins de 2h, 7j/7." },
-    { "titre": "Consultation gratuite", "description": "30 minutes par téléphone ou vidéo. Votre famille, vos envies, votre budget." },
-    { "titre": "Proposition en 24h", "description": "Itinéraire jour par jour, hôtels, activités, prix détaillé." },
-    { "titre": "Confirmation", "description": "Nous réservons tout. Paiement via notre agence partenaire certifiée OPC." },
-    { "titre": "Voyage & retour", "description": "Nos fixers sur place. Vous rentrez avec des souvenirs, pas du stress." }
+    {
+      "titre": "Contactez-nous",
+      "description": "WhatsApp, Facebook ou formulaire. Réponse en moins de 2h, 7j/7."
+    },
+    {
+      "titre": "Consultation gratuite",
+      "description": "30 minutes par téléphone ou vidéo. Votre famille, vos envies, votre budget."
+    },
+    {
+      "titre": "Proposition en 24h",
+      "description": "Itinéraire jour par jour, hôtels, activités, prix détaillé."
+    },
+    {
+      "titre": "Confirmation",
+      "description": "Nous réservons tout. Paiement via notre agence partenaire certifiée OPC."
+    },
+    {
+      "titre": "Voyage & retour",
+      "description": "Nos fixers sur place. Vous rentrez avec des souvenirs, pas du stress."
+    }
   ],
   "temoignages": [
-    { "initiales": "JE", "couleur": "#E1613A", "texte_couleur": "#14100D", "texte": "Mwen pa t janm panse m t ap ka rele manman m nan Santiago pou li di l ke nou sou wout pou ede l. XPEDISYON pa t jis yon ajan — se yon zanmi ki konprann sa sa vle di vwayaje lwen fanmi w.", "nom": "Jean-Pierre E.", "contexte": "Famille 5 personnes · RD 2025" },
-    { "initiales": "CP", "couleur": "#1F7A6B", "texte_couleur": "#F6F1E8", "texte": "Apre 5 an san ale Ayiti, mwen te pè. Yo te òganize tout bagay pou mwen — depi avyon an jouk lakay manman m. Mwen te santi m an sekirite tout tan.", "nom": "Claudette P.", "contexte": "Couple · Haïti 2025" },
-    { "initiales": "EB", "couleur": "#E8B44A", "texte_couleur": "#14100D", "texte": "Notre groupe de 18 personnes n'avait jamais voyagé ensemble. XPEDISYON a géré chaque détail sans un seul problème. Le pasteur Desrosiers recommande sans hésitation.", "nom": "Comité voyage", "contexte": "Église Bethel · Punta Cana 2025" }
+    {
+      "initiales": "JE",
+      "couleur": "#E1613A",
+      "texte_couleur": "#14100D",
+      "texte": "Mwen pa t janm panse m t ap ka rele manman m nan Santiago pou li di l ke nou sou wout pou ede l. XPEDISYON pa t jis yon ajan — se yon zanmi ki konprann sa sa vle di vwayaje lwen fanmi w.",
+      "nom": "Jean-Pierre E.",
+      "contexte": "Famille 5 personnes · RD 2025"
+    },
+    {
+      "initiales": "CP",
+      "couleur": "#1F7A6B",
+      "texte_couleur": "#F6F1E8",
+      "texte": "Apre 5 an san ale Ayiti, mwen te pè. Yo te òganize tout bagay pou mwen — depi avyon an jouk lakay manman m. Mwen te santi m an sekirite tout tan.",
+      "nom": "Claudette P.",
+      "contexte": "Couple · Haïti 2025"
+    },
+    {
+      "initiales": "EB",
+      "couleur": "#E8B44A",
+      "texte_couleur": "#14100D",
+      "texte": "Notre groupe de 18 personnes n'avait jamais voyagé ensemble. XPEDISYON a géré chaque détail sans un seul problème. Le pasteur Desrosiers recommande sans hésitation.",
+      "nom": "Comité voyage",
+      "contexte": "Église Bethel · Punta Cana 2025"
+    }
   ],
   "contact": {
     "whatsapp": "15141234567",

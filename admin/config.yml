@@ -33,7 +33,7 @@ collections:
           - label: "Bandeau défilant (villes)"
             name: "marquee"
             widget: "list"
-            field: { label: "Ville", widget: "string" }
+            field: { label: "Ville", name: "ville", widget: "string" }
 
           - label: "Statistiques (4 chiffres clés)"
             name: "stats"
